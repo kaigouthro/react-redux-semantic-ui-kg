@@ -1,4 +1,0 @@
-@tagTriangleRightOffset: 101%;
-@tagTriangleSize: 1.62em;
-@fontWeight: normal;
-@color: @textColor;

@@ -1,2 +1,0 @@
-@borderColor: @gray-dark;
-@focusBorderColor: @borderColor;

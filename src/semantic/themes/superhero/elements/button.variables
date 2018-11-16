@@ -1,5 +1,0 @@
-@textColor: #fff;
-@backgroundColor: @gray-light;
-@basicHoverBackground: @gray-dark;
-@activeBackgroundColor: @gray;
-@hoverBackgroundColor: darken(@gray-light, 3%);

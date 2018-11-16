@@ -11,4 +11,3 @@ webpack/dlls/*.json
 api/**/*.nedb
 *.report.html
 coverage
-*/thumbs.db

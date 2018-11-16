@@ -1,4 +1,0 @@
-@tooltipBackground: @gray-darker;
-@borderColor: @gray-light;
-@fontWeight: 500;
-@lineHeight: 22px;

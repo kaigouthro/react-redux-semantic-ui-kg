@@ -1,7 +1,0 @@
-@inputColor: @gray-darker;
-@inputFocusColor: @gray-darker;
-@selectColor: @gray-light;
-@formErrorColor: @gray-light;
-@formErrorBackground: #fff !important;
-@inputErrorFocusBorder: @negativeColor;
-@inputErrorFocusColor: @negativeColor;

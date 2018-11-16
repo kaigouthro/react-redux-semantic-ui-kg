@@ -1,3 +1,0 @@
-.ui.breadcrumb {
-  border-color: @gray-darker;
-}

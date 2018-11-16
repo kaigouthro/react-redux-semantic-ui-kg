@@ -1,3 +1,0 @@
-@hoveredItemColor: #fff;
-@hoveredItemBackground: #F3969A;
-@fontFamily: @headerFont;

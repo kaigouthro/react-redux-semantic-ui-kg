@@ -1,6 +1,0 @@
-@tabularBorerColor: #ededed;
-@tabularHoveredTextColor: @primaryColor;
-
-@verticalPadding: 1.2rem;
-@invertedHoverColor: rgba(255,255,255,.9);
-@invertedActiveColor: rgba(255,255,255,.9);

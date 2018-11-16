@@ -1,3 +1,0 @@
-@itemColor: #444;
-@hoveredItemColor: #fff;
-@hoveredItemBackground: @primaryColor;

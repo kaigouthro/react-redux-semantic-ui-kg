@@ -1,39 +1,31 @@
-## React Redux Universal Hot Example With Semantic UI, Feathers API, Express, and much more
 
->> THIS branch only. check main branch for their flawlessedits... mine are more like many little iterations, not all of which are complete or perfect.
-[![Build Status](https://travis-ci.org/kaigouthro/react-redux-semantic-ui.svg?branch=master&style=flat-square)]
-[![Dependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui.svg?style=flat-square)]
-[![devDependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui/dev-status.svg?style=flat-square)]
-# this is the KG noob-friendly version
->> This Fork's Status. do not let it reflect on the main line. mine will be missing a few things from the main line, and have some other things more tuned to my priorities, ie: Visual design language, and system operational flow and compartmentalized organization right from the start. some things are going to be moved and organized into subfolders, including additional compatible components and themes, as well as a style-guide page built right in for the dev's like myself who want to have their cheat sheet right on hand within their own dev environent. i also plan on going through deep diving at all those deprecated dependencies and updating code through the whole project to account for newer better dependencies. it's not cool to see this project relying on a v 1.0.5 _CORE_ dependency that's out  at v. 6.0.0, meanwhile a lot of other plugins can't update to their newest versions because it would break. Lots of this project still depends on 3-4 year old dependencies, and dependencies stating very clkearly "discontinued, do not use, use this instead, since 2016"..  
-# So..... 
-i'm going to update whatever i can figure out how to as a side project to this fork. i'll have one that follows and can interchange some pieces with the main branch, and then i'll work on my own branch as well, removing some of the demos, because you can always see them in the main branch, and they are complicated, and i'mk making a version with less complication and easier learning curve and faster and more stable setup by the way of not having as many working examples of full fledged systems, but have a few very simple components used in a way that makes them very easy to understand when reading the code, which will be commented fairly extensively.
+# React Redux Universal Hot Example With Semantic UI
 
-
-
-### Now, a slightly edited Forward, originally written by the OG i updated it for the 4 year time jump, from will be to was, want to, to "did"... ###
+[![Build Status](https://travis-ci.org/dongcai/react-redux-semantic-ui.svg?branch=master&style=flat-square)](https://travis-ci.org/dongcai/react-redux-semantic-ui)
+[![Dependency Status](https://david-dm.org/dongcai/react-redux-semantic-ui.svg?style=flat-square)](https://david-dm.org/dongcai/react-redux-semantic-ui)
+[![devDependency Status](https://david-dm.org/dongcai/react-redux-semantic-ui/dev-status.svg?style=flat-square)](https://david-dm.org/dongcai/react-redux-semantic-ui?type=dev)
 
 ---
-## Demo - The Original
+## Demo
 [React Redux Semantic UI](https://react-redux-semantic-ui.shopecific.com/)
 
 ## About
 
-This is a starter boilerplate app Erik Rasmussen pioneered, and later Kévin Berthommier and Dong Cai maintained, and improved, putting together and using the following technologies in a very crafty way to make "lightning fast." a reality.
+This is a starter boilerplate app I've put together using the following technologies:
 
-* [Universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) rendering
-* Both a client and a seperate API server making simultaneous calls.
+* ~~Isomorphic~~ [Universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) rendering
+* Both client and server make calls to load data from separate API server
 * [React](https://github.com/facebook/react)
 * [React Router](https://github.com/reactjs/react-router)
 * [Express](http://expressjs.com)
-* [Feathers](http://feathersjs.com/) (based on express and websockets, fast!)
+* [Feathers](http://feathersjs.com/)
 * [Passport](http://passportjs.org), [feathers-authentication](https://github.com/feathersjs/feathers-authentication) and [redux-auth-wrapper](https://github.com/mjrussell/redux-auth-wrapper) for authentication
 * [Babel](http://babeljs.io) for ES6 and ES7 magic
 * [Webpack](https://webpack.js.org/) for bundling
 * [Webpack Dev Middleware](http://webpack.github.io/docs/webpack-dev-middleware.html)
 * [Webpack Hot Middleware](https://github.com/glenjamin/webpack-hot-middleware)
 * [Redux](https://github.com/reactjs/redux)'s futuristic [Flux](https://facebook.github.io/react/blog/2014/05/06/flux.html) implementation
-* [Redux Dev Tools](https://github.com/reactjs/redux-devtools) for next generation DX (developer experience). Watch [Dan Abramov's talk](https://www.youtube.com/watch?v=xsSnOQynTHs). (Check the browser extension for chrome as well)
+* [Redux Dev Tools](https://github.com/reactjs/redux-devtools) for next generation DX (developer experience). Watch [Dan Abramov's talk](https://www.youtube.com/watch?v=xsSnOQynTHs).
 * [React Router Redux](https://github.com/reactjs/react-router-redux) Redux/React Router bindings.
 * [ESLint](http://eslint.org) to maintain a consistent code style
 * [redux-form](http://redux-form.com/) to manage form state in Redux
@@ -45,13 +37,7 @@ This is a starter boilerplate app Erik Rasmussen pioneered, and later Kévin Ber
 * [react-helmet](https://github.com/nfl/react-helmet) to manage title and meta tag information on both server and client
 * [webpack-isomorphic-tools](https://github.com/halt-hammerzeit/webpack-isomorphic-tools) to allow require() work for statics both on client and server
 * [Jest](https://facebook.github.io/jest/) to allow writing unit tests for the project.
-
-These Heroes cobbled this together from a wide variety of similar "starter" repositories. As I (KG) post this in November 2018, i think back to how forward thinking it was back in June 2015 to have created this, all of these libraries were and still are right at the bleeding edge of web development. They may fall out of fashion as quickly as they have come into it, (KG: i doubt it) but they personally believed that this stack was the future of web development and will survive for several years. They went on building their new projects like this, and they, as well as I recommend that you do, too.
-
-#
-## [ /KG's edited forward> ] ##
-#
-
+I cobbled this together from a wide variety of similar "starter" repositories. As I post this in June 2015, all of these libraries are right at the bleeding edge of web development. They may fall out of fashion as quickly as they have come into it, but I personally believe that this stack is the future of web development and will survive for several years. I'm building my new projects like this, and I recommend that you do, too.
 
 ## Features
 

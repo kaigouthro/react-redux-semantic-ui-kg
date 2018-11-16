@@ -1,4 +1,0 @@
-@tabularBorderColor: @gray-darker;
-@tabularActiveColor: @gray-darker;
-@tabularActiveBorderColor: @gray-darker;
-@tabularHoveredTextColor: @gray-darker;

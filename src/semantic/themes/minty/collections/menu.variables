@@ -1,4 +1,0 @@
-@invertedItemTextColor: rgba(255,255,255,.6);
-@invertedHoverColor: #fff;
-@invertedBackground: #F3969A;
-@fontFamily: @headerFont;

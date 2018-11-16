@@ -1,5 +1,0 @@
-@backgroundColor: @gray-darker;
-@color: @white;
-@ribbonShadowColor: @gray;
-@labelHoverBackgroundColor: @gray-base;
-@labelHoverTextColor: #fff;

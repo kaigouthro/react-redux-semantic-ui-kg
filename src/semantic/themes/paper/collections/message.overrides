@@ -1,3 +1,0 @@
-.ui.message a:not(.button) {
-  font-weight: bold;
-}

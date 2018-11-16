@@ -1,5 +1,0 @@
-@itemColor: @textColor;
-@hoveredItemColor: #fff;
-@hoveredItemBackground: @primaryColor;
-@selectionTextUnderlayColor: lighten(#000, 10%);
-@menuHeaderColor: #868e96;

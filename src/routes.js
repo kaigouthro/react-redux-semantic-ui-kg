@@ -9,7 +9,6 @@ import LoginSuccess from 'containers/LoginSuccess/Loadable';
 import Logout from 'containers/Logout/Loadable';
 import Register from 'containers/Register/Loadable';
 import Survey from 'containers/Survey/Loadable';
-import Template from 'containers/Template/Loadable';
 import Widgets from 'containers/Widgets/Loadable';
 
 const isAuthenticated = connectedReduxRedirect({
@@ -40,7 +39,6 @@ const routes = [
       { path: '/login-success', component: isAuthenticated(LoginSuccess) },
       { path: '/register', component: isNotAuthenticated(Register) },
       { path: '/survey', component: Survey },
-      { path: '/template', component: Template },
       { path: '/widgets', component: Widgets },
       { component: NotFound }
     ]
