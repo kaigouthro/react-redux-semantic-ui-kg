@@ -3,7 +3,7 @@
 >> THIS branch only. check main branch for their flawlessedits... 
 >> mine are more like many little iterations, not all of which are complete or perfect.
 
-[![Build Status](https://travis-ci.org/kaigouthro/react-redux-semantic-ui.svg?branch=master&style=flat-square)]
+[![Build Status](https://travis-ci.org/kaigouthro/react-redux-semantic-ui-KG.the.Noob.svg?branch=master)]
 [![Dependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui.svg?style=flat-square)]
 [![devDependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui/dev-status.svg?style=flat-square)]
 
