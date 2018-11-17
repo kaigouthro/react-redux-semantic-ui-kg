@@ -9,6 +9,7 @@ import LoginSuccess from 'containers/LoginSuccess/Loadable';
 import Logout from 'containers/Logout/Loadable';
 import Register from 'containers/Register/Loadable';
 import Survey from 'containers/Survey/Loadable';
+import Template from 'containers/Template/Loadable';
 import Widgets from 'containers/Widgets/Loadable';
 
 const isAuthenticated = connectedReduxRedirect({
@@ -23,7 +24,7 @@ const isNotAuthenticated = connectedReduxRedirect({
   authenticatedSelector: state => state.auth.user === null,
   redirectAction: routerActions.replace,
   wrapperDisplayName: 'UserIsAuthenticated',
-  allowRedirectBack: false
+  allowRedirectBack: false,
 });
 
 const routes = [
@@ -39,10 +40,13 @@ const routes = [
       { path: '/login-success', component: isAuthenticated(LoginSuccess) },
       { path: '/register', component: isNotAuthenticated(Register) },
       { path: '/survey', component: Survey },
+      { path: '/template', component: Template },
       { path: '/widgets', component: Widgets },
       { component: NotFound }
     ]
-  }
+  },
 ];
 
 export default routes;
+
+// ooooh,  i like this file..gonna make it some siblings for other routes.

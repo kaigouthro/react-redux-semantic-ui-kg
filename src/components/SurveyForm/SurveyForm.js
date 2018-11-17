@@ -27,39 +27,39 @@ const Input = ({
   },
   ...rest
 }) => (
-  <Form.Field error={!!(touched && error)} required={required} className={styles.inputGroup}>
-    {label && <span>{label}</span>}
-    {showAsyncValidating && asyncValidating && <i className={`fa fa-cog fa-spin ${styles.cog}`} />}
-    <InputComponent required={required} {...input} {...rest} />
-    <div className={styles.flags}>
-      {dirty && (
-        <span className={styles.dirty} title="Dirty">
-          D
+    <Form.Field error={!!(touched && error)} required={required} className={styles.inputGroup}>
+      {label && <span>{label}</span>}
+      {showAsyncValidating && asyncValidating && <i className={`fa fa-cog fa-spin ${styles.cog}`} />}
+      <InputComponent required={required} {...input} {...rest} />
+      <div className={styles.flags}>
+        {dirty && (
+          <span className={styles.dirty} title="Dirty">
+            D
         </span>
-      )}
-      {active && (
-        <span className={styles.active} title="Active">
-          A
+        )}
+        {active && (
+          <span className={styles.active} title="Active">
+            A
         </span>
-      )}
-      {visited && (
-        <span className={styles.visited} title="Visited">
-          V
+        )}
+        {visited && (
+          <span className={styles.visited} title="Visited">
+            V
         </span>
-      )}
-      {touched && (
-        <span className={styles.touched} title="Touched">
-          T
+        )}
+        {touched && (
+          <span className={styles.touched} title="Touched">
+            T
         </span>
-      )}
-    </div>
-    {touched && error ? (
-      <Label basic color="red" pointing>
-        {error}
-      </Label>
-    ) : null}
-  </Form.Field>
-);
+        )}
+      </div>
+      {touched && error ? (
+        <Label basic color="red" pointing>
+          {error}
+        </Label>
+      ) : null}
+    </Form.Field>
+  );
 
 Input.propTypes = fieldPropTypes;
 
