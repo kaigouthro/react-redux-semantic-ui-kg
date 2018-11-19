@@ -1,11 +1,17 @@
-## React Redux Universal Hot Example With Semantic UI, Feathers API, Express, and much more
-
-THIS branch only. check main branch for their flawlessedits...
-mine are more like many little iterations, not all of which are complete or perfect.
-
 ![Build Status](https://travis-ci.org/kaigouthro/react-redux-semantic-ui.svg?branch=Master)
 ![Dependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui.svg?)
 ![devDependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui/dev-status.svg?)
+
+## React Redux Universal Hot Example With Semantic UI, Feathers API, Express, and much more
+
+THIS branch only. check main branch for their more experienced edits...
+mine are more like many little iterations, not all of which are complete or perfect.
+i have the build icon though, and it's got some extremely rigorous settings..
+
+just because the build passes though, doesn't mean anything i'm working on is complete.
+as i write this november 19/2018, 4 years after the originator wrote a bunch of what's below, i'm editing the creation into something else on one branch, and making mostly design edits and mild function edits to the mainline.
+
+my version i will be stripping the components out to make it far more modular, and less of the pages will have everything coded on one sheet, but rather, i'll componentize the parts down to primal functions and pieces to be used. =) that will take time, so don't expect my offshoot branch to move functionally quickly or get commits as often as my sandboxes..  so... without further ado...
 
 # This is the KG noob-friendly version
 
@@ -102,13 +108,13 @@ This new level of quality allows Progressive Web Apps to earn a place on the use
 ## Installation
 
 ```bash
-npm install
+yarn install
 ```
 
 ## Running Dev Server
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 The first time it may take a little while to generate the first `webpack-assets.json` and complain with a few dozen `[webpack-isomorphic-tools] (waiting for the first Webpack build to finish)` printouts, but be patient. Give it 30 seconds.
