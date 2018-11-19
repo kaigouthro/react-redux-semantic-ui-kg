@@ -198,7 +198,7 @@ class Template extends Component {
                     <Header as="h2">
                       <Icon bordered inverted color="teal" name="images outline" />
                       <Header.Content>
-                        Bonus Resources
+                        Design Resources
                         <Header.Subheader>
                           <p>More to kickstart your page.</p>
                           <p>Inspiration and Assets</p>

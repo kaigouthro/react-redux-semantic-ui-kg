@@ -11,7 +11,7 @@ import config from 'config';
  *
  * The only thing this component doesn't (and can't) include is the
  * HTML doctype declaration, which is added to the rendered output
- * by the server.js file.
+ * by the server.js file..
  */
 export default class Html extends Component {
   static propTypes = {

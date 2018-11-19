@@ -86,13 +86,13 @@ class Chat extends Component {
               .reverse()
               .map(msg => (
                 <ui key={`chat.msg.${msg.id}`}>
-                <Animate
-                    play='true'
-                    startStyle={{"transform":"translateX(60em)", "opacity": '0'}}
-                    endStyle={{ "transform": "translateX(0)", "opacity": '1'}}
+                  <Animate
+                    play="true"
+                    startStyle={{ transform: 'translateX(60em)', opacity: '0' }}
+                    endStyle={{ transform: 'translateX(0)', opacity: '1' }}
                     delaySeconds="0.1"
                     durationSeconds=".5"
-                >
+                  >
                     <Label Icon name="chat" color="blue" startStyle={{ margin: '5px' }}>
                       <Icon name="chat" />
                       {msg.from}
@@ -112,5 +112,7 @@ class Chat extends Component {
 }
 
 export default Chat;
-// To show that chat messages cahn come in any method, some are in tags,
-// some are in labels...get creative! semantic - ui - REact is pretty fun.
+
+// To show that chat messages can come in any method
+// I put them in animated labels.
+// Get creative! semantic - ui - React is pretty fun.

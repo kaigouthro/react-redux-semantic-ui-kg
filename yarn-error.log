@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-headroom --save
+  C:\Program Files\nodejs\node.exe C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js - add react-headroom --save
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Kai\bin;C:\Python27;C:\Python27\Scripts;C:\ProgramData\Boxstarter;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NetMake\v9\components\php;C:\Program Files\PuTTY;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Ruby25-x64\bin;C:\Users\Kai\AppData\Local\Microsoft\WindowsApps;C:\Users\Kai\AppData\Local\GitHubDesktop\bin;C:\Users\Kai\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Kai\AppData\Roaming\npm
@@ -14,7 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, copyfile 'C:\Users\Kai\AppData\Local\Yarn\Cache\v4\npm-react-router-config-1.0.0-beta.4-d202496dd0eabdf06cf24eb0793031f6891eef01\node_modules\react-router-config\es\renderRoutes.js' -> 'H:\WWW CODE\Sandbox\react-redux-semantic-ui-sandbox\node_modules\react-router-config\es\renderRoutes.js'
+  Error: https://registry.yarnpkg.com/-: Not found
+      at Request.params.callback [as _callback] (C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:65894:18)
+      at Request.self.callback (C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:129018:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:129990:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:129912:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1094:12)
+      at process.internalTickCallback (internal/process/next_tick.js:72:19)
 
 npm manifest: 
   {
@@ -138,6 +148,7 @@ npm manifest:
       "react-router-redux": "^5.0.0-alpha.9",
       "react-semantic-redux-form": "^1.2.5",
       "react-simple-animate": "^2.3.0",
+      "react-sticky-box": "^0.7.5",
       "recompose": "^0.27.0",
       "redial": "^0.5.0",
       "redux": "^4.0.0",
@@ -9602,6 +9613,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-simple-animate/-/react-simple-animate-2.3.0.tgz#0d99efce33e71bfca72118fac03af2f3e66cc052"
     integrity sha512-f6Q7RL2nZRda9Mo7LtlIddCyPq+gzRzmZQBwNM/p7VluVmybDoevY7AU8JxbB6rH5tu4YXwpq9L/AYMLUYk0gQ==
   
+  react-sticky-box@^0.7.5:
+    version "0.7.5"
+    resolved "https://registry.yarnpkg.com/react-sticky-box/-/react-sticky-box-0.7.5.tgz#54fceb0df176e1b0667621fc808ef18d7876f19d"
+    integrity sha512-wERNQohlkCh5zrzVG97QOMr0iNuOlSRn6qF67rViOjjaryQIoYMFYUUGRO93fB8NVzJMInb/ip6cXEAg+TUbnA==
+    dependencies:
+      "@babel/runtime" "^7.1.2"
+      prop-types "^15.6.2"
+      resize-observer-polyfill "^1.3.1"
+  
   react-to-html-webpack-plugin@^2.2.0:
     version "2.2.0"
     resolved "https://registry.yarnpkg.com/react-to-html-webpack-plugin/-/react-to-html-webpack-plugin-2.2.0.tgz#0a1555459b867d6d0a3549248dfbc61dbf0c887b"
@@ -10130,6 +10150,11 @@ Lockfile:
     version "0.1.2"
     resolved "https://registry.yarnpkg.com/reserved-words/-/reserved-words-0.1.2.tgz#00a0940f98cd501aeaaac316411d9adc52b31ab1"
     integrity sha1-AKCUD5jNUBrqqsMWQR2a3FKzGrE=
+  
+  resize-observer-polyfill@^1.3.1:
+    version "1.5.0"
+    resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.0.tgz#660ff1d9712a2382baa2cad450a4716209f9ca69"
+    integrity sha512-M2AelyJDVR/oLnToJLtuDJRBBWUGUvvGigj1411hXhAdyFWqMaqHp7TixW3FpiLuVaikIcR1QL+zqoJoZlOgpg==
   
   resolve-cwd@^2.0.0:
     version "2.0.0"

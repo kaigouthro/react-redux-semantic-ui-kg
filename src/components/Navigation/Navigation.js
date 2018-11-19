@@ -4,20 +4,14 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
 import Headroom from 'react-headroom';
+
 import {
   Icon, Image, Menu, Sidebar, Responsive
 } from 'semantic-ui-react';
 
 const NavBarMobile = props => (
   <Sidebar.Pushable>
-    <Sidebar
-      as={Menu}
-      size="small"
-      animation="overlay"
-      inverted
-      visible={props.visible}
-      style={{ minHeight: '100vmax' }}
-    >
+    <Sidebar as={Menu} animation="scale down" inverted visible={props.visible} style={{ height: '100vh' }}>
       <Icon className={props.styles.closeIt} name="close" size="large" onClick={props.onToggle} />
       <Menu vertical inverted fluid>
         <Menu.Item>
@@ -30,14 +24,12 @@ const NavBarMobile = props => (
         ))}
       </Menu>
     </Sidebar>
-    <Sidebar.Pusher dimmed={props.visible} onClick={props.onPusherClick} style={{ minHeight: '45vh' }}>
-    <Headroom>
+    <Sidebar.Pusher dimmed={props.visible} onClick={props.onPusherClick} style={{ minHeight: '100vh' }}>
       <Responsive minWidth={769}>
-          <NavBarDesktop leftItems={props.leftItems} rightItems={props.rightItems} />
+        <NavBarDesktop leftItems={props.leftItems} rightItems={props.rightItems} />
       </Responsive>
-      </Headroom>
       <Responsive maxWidth={768}>
-        <Menu inverted>
+        <Menu fixed="top" inverted>
           <Menu.Item onClick={props.onToggle}>
             <Icon name="sidebar" />
           </Menu.Item>
@@ -76,25 +68,23 @@ NavBarMobile.defaultProps = {
 };
 
 const NavBarDesktop = ({ leftItems, rightItems }) => (
-  <Headroom>
-    <Menu inverted>
-      <Menu.Item>
-        <Image as={Link} to="/" size="mini" src="https://react.semantic-ui.com/logo.png" />
+  <Menu inverted>
+    <Menu.Item>
+      <Image as={Link} to="/" size="mini" src="https://react.semantic-ui.com/logo.png" />
+    </Menu.Item>
+    {_.map(leftItems, item => (
+      <Menu.Item as={Link} to={item.to} key={item.key}>
+        {item.content}
       </Menu.Item>
-      {_.map(leftItems, item => (
+    ))}
+    <Menu.Menu position="right">
+      {_.map(rightItems, item => (
         <Menu.Item as={Link} to={item.to} key={item.key}>
           {item.content}
         </Menu.Item>
       ))}
-      <Menu.Menu position="right">
-        {_.map(rightItems, item => (
-          <Menu.Item as={Link} to={item.to} key={item.key}>
-            {item.content}
-          </Menu.Item>
-        ))}
-      </Menu.Menu>
-    </Menu>
-  </Headroom>
+    </Menu.Menu>
+  </Menu>
 );
 
 NavBarDesktop.propTypes = {
@@ -107,13 +97,12 @@ NavBarDesktop.defaultProps = {
   rightItems: [],
 };
 
-const NavBarChildren = ({ children }) => <div style={{ padding: '0.10em 0em 0em 0em' }}>{children}</div>;
+const NavBarChildren = ({ children }) => <div style={{ margin: '2em 0em' }}>{children}</div>;
 
-const NavBarChildrenM = ({ children }) => <div style={{ margin: '0.10em 0em 0em 0em' }}>{children}</div>;
+NavBarChildren.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
-NavBarChildren.propTypes = { children: PropTypes.node.isRequired };
-
-NavBarChildrenM.propTypes = { children: PropTypes.node.isRequired };
 export default class Navigation extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
@@ -133,16 +122,16 @@ export default class Navigation extends Component {
   handlePusher = () => {
     const { visible } = this.state;
 
-    if (visible) this.setState({ visible: !this.state.visible });
+    if (visible) this.setState({ visible: false });
   };
 
-  // use this.setState ({visible: ! this.state.visible} is bad
+  // using this.setState({visible: !this.state.visible} is bad
   // because if you click toggle more than twice in the same cycle
   // react may do the batch update, and only one being executed, and you will see the toggle failed
   // ref: https://reactjs.org/docs/react-component.html#setstate
 
   handleToggle = () => {
-    this.setState(state => ({ visible: !this.state.visible }));
+    this.setState(state => ({ visible: !state.visible }));
   };
 
   render() {
@@ -153,7 +142,7 @@ export default class Navigation extends Component {
     const styles = require('./Navigation.scss');
 
     return (
-      <div style={{ flex: 1 }}>
+      <div style={{ minHeight: '100vh' }}>
         {mobileOnly && (
           <NavBarMobile
             leftItems={leftItems}
@@ -163,10 +152,9 @@ export default class Navigation extends Component {
             visible={visible}
             styles={styles}
           >
-            <NavBarChildrenM>{children}</NavBarChildrenM>
+            <NavBarChildren>{children}</NavBarChildren>
           </NavBarMobile>
         )}
-        ,
         {!mobileOnly && (
           <Responsive {...Responsive.onlyMobile}>
             <NavBarMobile
@@ -177,19 +165,21 @@ export default class Navigation extends Component {
               visible={visible}
               styles={styles}
             />
-            <NavBarChildrenM>{children}</NavBarChildrenM>
-          </Responsive>
-        )}
-        ,
-        {!mobileOnly && (
-          <Responsive maxWidth={Responsive.onlyTablet.maxWidth}>
-            <NavBarDesktop leftItems={leftItems} rightItems={rightItems} visible styles={styles} />
             <NavBarChildren>{children}</NavBarChildren>
           </Responsive>
+        )}
+        {!mobileOnly && (
+          <Responsive maxWidth={Responsive.tabletOnly.maxwidth}>
+            <div>
+              <Headroom>
+                <NavBarDesktop leftItems={leftItems} rightItems={rightItems} />
+              </Headroom>
+              <NavBarChildren>{children}</NavBarChildren>
+            </div>
+          </Responsive>
+
         )}
       </div>
     );
   }
 }
-
-// iiiii HATE THIS. I really do. stupid nav all in one file crammmed up. woulld be a lot nicer to come up with a couple primatives that could transform for each of the three types of devices planned through breakpoints. way easier than sifting through one file to get what's what part of what, with no commentary or anything. i'm going to tear this apart and make soething better and easier out of it, or i might just flat out replace it with something nice and clean and elegant, turn it into a semantic-ui skinnable rig, and go on ahead that way.
