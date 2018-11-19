@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 @connect(state => ({ time: state.info.data.time }))
 class MiniInfoBar extends Component {
   static propTypes = {
-    time: PropTypes.number.isRequired
+    time: PropTypes.number.isRequired,
   };
 
   render() {

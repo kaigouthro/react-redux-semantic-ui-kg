@@ -8,19 +8,22 @@ import FacebookLogin from 'components/FacebookLogin/FacebookLogin';
 import * as authActions from 'redux/modules/auth';
 import * as notifActions from 'redux/modules/notifs';
 
-@connect(state => ({ user: state.auth.user }), { ...notifActions, ...authActions })
+@connect(
+  state => ({ user: state.auth.user }),
+  { ...notifActions, ...authActions }
+)
 class Login extends Component {
   static propTypes = {
     user: PropTypes.shape({
-      email: PropTypes.string
+      email: PropTypes.string,
     }),
     login: PropTypes.func.isRequired,
     logout: PropTypes.func.isRequired,
-    notifSend: PropTypes.func.isRequired
+    notifSend: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
-    user: null
+    user: null,
   };
 
   onFacebookLogin = async (err, data) => {
@@ -33,7 +36,7 @@ class Login extends Component {
       if (error.message === 'Incomplete oauth registration') {
         this.context.router.push({
           pathname: '/register',
-          state: { oauth: error.data }
+          state: { oauth: error.data },
         });
       } else {
         throw error;
@@ -51,11 +54,13 @@ class Login extends Component {
     this.props.notifSend({
       message: "You're logged !",
       kind: 'success',
-      dismissAfter: 2000
+      dismissAfter: 2000,
     });
   };
 
-  FacebookLoginButton = ({ facebookLogin }) => <Button onClick={facebookLogin}>Login with Facebook</Button>;
+  FacebookLoginButton = ({ facebookLogin }) => (
+    <Button onClick={facebookLogin}>Login with Facebook</Button>
+  );
 
   render() {
     const { user, logout } = this.props;
@@ -66,7 +71,10 @@ class Login extends Component {
         {!user && (
           <div>
             <LoginForm onSubmit={this.login} />
-            <p>This will "log you in" as this user, storing the username in the session of the API server.</p>
+            <p>
+              This will "log you in" as this user, storing the username in the
+              session of the API server.
+            </p>
             <FacebookLogin
               appId="635147529978862"
               /* autoLoad={true} */

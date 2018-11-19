@@ -16,14 +16,14 @@ const { isLoaded, load: loadWidgets } = widgetActions;
     if (!isLoaded(getState())) {
       return dispatch(loadWidgets()).catch(() => null);
     }
-  }
+  },
 })
 @connect(
   state => ({
     widgets: state.widgets.data,
     editing: state.widgets.editing,
     error: state.widgets.error,
-    loading: state.widgets.loading
+    loading: state.widgets.loading,
   }),
   widgetActions
 )
@@ -34,13 +34,13 @@ class Widgets extends Component {
     loading: PropTypes.bool,
     editing: PropTypes.objectOf(PropTypes.bool).isRequired,
     load: PropTypes.func.isRequired,
-    editStart: PropTypes.func.isRequired
+    editStart: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
     widgets: null,
     error: null,
-    loading: false
+    loading: false,
   };
 
   render() {
@@ -65,23 +65,17 @@ class Widgets extends Component {
           If you hit 'Refresh' on your browser, the data loading will take place on the browser after the page is
           returned. If you navigated here from another page, the data was fetched from the client after the route
           transition. This uses the decorator method
-          {' '}
           <code>@provideHooks</code>
           {' '}
 with the
-          {' '}
           <code>defer</code>
-          {' '}
-key. To
-          block a route transition until some data is loaded, use the
-          {' '}
+          key. To block a route transition until some data is loaded, use the
           <code>fetch</code>
           {' '}
-key. To always render before
-          loading data, even on the server, use
+key. To always render before loading data, even on the server, use
           {' '}
           <code>componentWillMount</code>
-          .
+.
         </p>
         <p>This widgets are stored in your session, so feel free to edit it and refresh.</p>
         {error && (
@@ -91,8 +85,7 @@ key. To always render before
             {error}
           </div>
         )}
-        {widgets
-          && widgets.length && (
+        {widgets && widgets.length && (
           <Table celled>
             <Table.Header>
               <Table.Row>
@@ -104,23 +97,21 @@ key. To always render before
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {widgets.map(
-                widget => editing[widget.id] ? (
-                  <WidgetForm form={String(widget.id)} key={String(widget.id)} initialValues={widget} />
-                ) : (
-                  <Table.Row>
-                    <Table.Cell>
-                      <Label ribbon>{widget.id}</Label>
-                    </Table.Cell>
-                    <Table.Cell>{widget.color}</Table.Cell>
-                    <Table.Cell>{widget.sprocketCount}</Table.Cell>
-                    <Table.Cell>{widget.owner}</Table.Cell>
-                    <Table.Cell>
-                      <Button onClick={handleEdit(widget)}>Edit</Button>
-                    </Table.Cell>
-                  </Table.Row>
-                )
-              )}
+              {widgets.map(widget => editing[widget.id] ? (
+                <WidgetForm form={String(widget.id)} key={String(widget.id)} initialValues={widget} />
+              ) : (
+                <Table.Row>
+                  <Table.Cell>
+                    <Label ribbon>{widget.id}</Label>
+                  </Table.Cell>
+                  <Table.Cell>{widget.color}</Table.Cell>
+                  <Table.Cell>{widget.sprocketCount}</Table.Cell>
+                  <Table.Cell>{widget.owner}</Table.Cell>
+                  <Table.Cell>
+                    <Button onClick={handleEdit(widget)}>Edit</Button>
+                  </Table.Cell>
+                </Table.Row>
+              ))}
             </Table.Body>
           </Table>
         )}

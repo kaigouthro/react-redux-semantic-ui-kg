@@ -29,7 +29,7 @@ GithubButton.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
   count: PropTypes.bool.isRequired,
-  large: PropTypes.bool.isRequired
+  large: PropTypes.bool.isRequired,
 };
 
 export default GithubButton;

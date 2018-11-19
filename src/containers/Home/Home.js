@@ -8,11 +8,11 @@ import { connect } from 'react-redux';
 import { Container, Header, Segment } from 'semantic-ui-react';
 
 @connect(state => ({
-  online: state.online
+  online: state.online,
 }))
 class Home extends Component {
   static propTypes = {
-    online: PropTypes.bool.isRequired
+    online: PropTypes.bool.isRequired,
   };
 
   render() {
@@ -316,10 +316,12 @@ logic is
 in
               {' '}
               <code>App.js</code>
-              , but it could be done in any component that listens to the appropriate store slice, via Redux's
+, but it could be done in any
+              component that listens to the appropriate store slice, via Redux's
               {' '}
               <code>@connect</code>
-              , and pulls the router from the context.
+, and pulls the
+              router from the context.
             </dd>
             <dt>Auth-required views</dt>
             <dd>
@@ -336,7 +338,7 @@ logic is performed by the
               {' '}
 hook within
               <code>routes.js</code>
-              .
+.
             </dd>
             <dt>Forms</dt>
             <dd>
@@ -375,7 +377,7 @@ uses the socket.io technology for real-time communication between
 
           <p>Thanks for taking the time to check this out.</p>
 
-          <p>â€“ Erik Rasmussen</p>
+          <p>â€ Erik Rasmussen</p>
         </Container>
       </div>
     );

@@ -6,11 +6,11 @@ import registerValidation from './registerValidation';
 
 @reduxForm({
   form: 'register',
-  validate: registerValidation
+  validate: registerValidation,
 })
 class RegisterForm extends Component {
   static propTypes = {
-    ...propTypes
+    ...propTypes,
   };
 
   render() {

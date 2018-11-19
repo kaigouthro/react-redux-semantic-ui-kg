@@ -3,7 +3,7 @@ import Loadable from 'react-loadable';
 
 const ChatLoadable = Loadable({
   loader: () => import('./Chat'),
-  loading: () => <div>Loading</div>
+  loading: () => <div>Loading</div>,
 });
 
 export default ChatLoadable;

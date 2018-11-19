@@ -8,12 +8,12 @@ export const colors = [
   { key: 'green', value: 'Green', text: 'Green' },
   { key: 'orange', value: 'Orange', text: 'Orange' },
   { key: 'red', value: 'Red', text: 'Red' },
-  { key: 'taupe', value: 'Taupe', text: 'Taupe' }
+  { key: 'taupe', value: 'Taupe', text: 'Taupe' },
 ];
 
 const widgetValidation = createValidator({
   color: [required, oneOf(colors.map(item => item.value))],
   sprocketCount: [required, integer],
-  owner: [required, maxLength(30)]
+  owner: [required, maxLength(30)],
 });
 export default widgetValidation;

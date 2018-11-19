@@ -7,11 +7,11 @@ import loginValidation from './loginValidation';
 
 @reduxForm({
   form: 'login',
-  validate: loginValidation
+  validate: loginValidation,
 })
 class LoginForm extends Component {
   static propTypes = {
-    ...propTypes
+    ...propTypes,
   };
 
   render() {

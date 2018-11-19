@@ -11,12 +11,12 @@ import widgetValidation, { colors } from './widgetValidation';
 
 @reduxForm({
   form: 'widget',
-  validate: widgetValidation
+  validate: widgetValidation,
 })
 @connect(
   (state, props) => ({
     saveError: state.widgets.saveError,
-    values: getFormValues(props.form)(state)
+    values: getFormValues(props.form)(state),
   }),
   { ...widgetActions }
 )
@@ -30,7 +30,7 @@ class WidgetForm extends Component {
     submitting: PropTypes.bool.isRequired,
     saveError: PropTypes.objectOf(PropTypes.any).isRequired,
     form: PropTypes.string.isRequired,
-    values: PropTypes.objectOf(PropTypes.any).isRequired
+    values: PropTypes.objectOf(PropTypes.any).isRequired,
   };
 
   render() {
@@ -43,7 +43,7 @@ class WidgetForm extends Component {
       save,
       submitting,
       saveError: { [form]: saveError },
-      values
+      values,
     } = this.props;
     const styles = require('containers/Widgets/Widgets.scss');
     return (

@@ -6,14 +6,17 @@ import RegisterForm from 'components/RegisterForm/RegisterForm';
 import * as authActions from 'redux/modules/auth';
 import * as notifActions from 'redux/modules/notifs';
 
-@connect(() => ({}), { ...notifActions, ...authActions })
+@connect(
+  () => ({}),
+  { ...notifActions, ...authActions }
+)
 class Register extends Component {
   static propTypes = {
     location: PropTypes.shape({
-      state: PropTypes.object
+      state: PropTypes.object,
     }).isRequired,
     register: PropTypes.func.isRequired,
-    notifSend: PropTypes.func.isRequired
+    notifSend: PropTypes.func.isRequired,
   };
 
   getInitialValues = () => {
@@ -31,7 +34,7 @@ class Register extends Component {
     this.props.notifSend({
       message: "You'r now registered !",
       kind: 'success',
-      dismissAfter: 2000
+      dismissAfter: 2000,
     });
   };
 

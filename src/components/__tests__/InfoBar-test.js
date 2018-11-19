@@ -2,7 +2,7 @@ import React from 'react';
 import {
   renderIntoDocument,
   findRenderedDOMComponentWithTag,
-  findRenderedDOMComponentWithClass
+  findRenderedDOMComponentWithClass,
 } from 'react-dom/test-utils';
 import { expect } from 'chai';
 import { InfoBar } from 'components';
@@ -16,23 +16,25 @@ const client = apiClient();
 describe('InfoBar', () => {
   const mockStore = {
     info: {
-      load: () => {},
+      load: () => { },
       loaded: true,
       loading: false,
       data: {
         message: 'This came from the api server',
-        time: Date.now()
-      }
-    }
+        time: Date.now(),
+      },
+    },
   };
   const store = createStore({
     history: browserHistory,
     helpers: { client },
-    data: mockStore
+    data: mockStore,
   });
-  const renderer = renderIntoDocument(<Provider store={store} key="provider">
-    <InfoBar />
-  </Provider>);
+  const renderer = renderIntoDocument(
+    <Provider store={store} key="provider">
+      <InfoBar />
+    </Provider>
+  );
 
   it('should render correctly', () => {
     // eslint-disable-next-line no-unused-expressions

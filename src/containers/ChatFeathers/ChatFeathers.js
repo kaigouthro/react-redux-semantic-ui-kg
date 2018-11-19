@@ -96,8 +96,7 @@ class ChatFeathers extends Component {
                 }}
                 placeholder="Enter your message"
                 value={this.state.message}
-                onChange={event =>
-                  this.setState({ message: event.target.value })
+                onChange={event => this.setState({ message: event.target.value })
                 }
               />
               <Button onClick={this.handleSubmit} icon="send" content=" Send" />
@@ -114,12 +113,13 @@ class ChatFeathers extends Component {
           <Segment
             color="teal"
             raised
-            style={{ overflow: 'auto', maxHeight: '50vh' }}>
+            style={{ overflow: 'auto', maxHeight: '28em' }}
+          >
             {messages
               .slice(0)
               .reverse()
               .map(msg => (
-                <Message key={`chat.msg.${msg._id}`} raised size="tiny">
+                <Message key={`chat.msg.${msg._id}`} raised size="mini">
                   {msg.sentBy.email}
                   :&nbsp;&nbsp;
                   {msg.text}

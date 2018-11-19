@@ -3,7 +3,7 @@ import Loadable from 'react-loadable';
 
 const RegisterLoadable = Loadable({
   loader: () => import('./Register'),
-  loading: () => <div>Loading</div>
+  loading: () => <div>Loading</div>,
 });
 
 export default RegisterLoadable;

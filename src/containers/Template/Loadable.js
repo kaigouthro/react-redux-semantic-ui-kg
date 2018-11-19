@@ -3,7 +3,7 @@ import Loadable from 'react-loadable';
 
 const TemplatehLoadable = Loadable({
   loader: () => import('./Template'),
-  loading: () => <div>Loading</div>
+  loading: () => <div>Loading</div>,
 });
 
 export default TemplatehLoadable;

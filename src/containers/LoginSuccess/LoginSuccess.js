@@ -4,13 +4,16 @@ import { connect } from 'react-redux';
 import { Button } from 'semantic-ui-react';
 import * as authActions from 'redux/modules/auth';
 
-@connect(state => ({ user: state.auth.user }), authActions)
+@connect(
+  state => ({ user: state.auth.user }),
+  authActions
+)
 class LoginSuccess extends Component {
   static propTypes = {
     user: PropTypes.shape({
-      email: PropTypes.string
+      email: PropTypes.string,
     }).isRequired,
-    logout: PropTypes.func.isRequired
+    logout: PropTypes.func.isRequired,
   };
 
   render() {
@@ -31,8 +34,7 @@ class LoginSuccess extends Component {
               {' '}
 in
               <code>App.js</code>
-, which is listening to the auth reducer
-              via redux
+, which is listening to the auth reducer via redux
               <code>@connect</code>
 . How exciting!
             </p>

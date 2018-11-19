@@ -2,7 +2,10 @@ import { socket } from 'app';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Button, Container, Icon, Input, Label } from 'semantic-ui-react';
+import {
+  Button, Form, Container, Icon, Label
+} from 'semantic-ui-react';
+import { Animate } from 'react-simple-animate';
 
 @connect(state => ({ user: state.auth.user }))
 class Chat extends Component {
@@ -59,40 +62,58 @@ class Chat extends Component {
     return (
       <di className={`${styles.chat} container`}>
         <h1>Chat</h1>
-
-        <Container>
-          <form onSubmit={this.handleSubmit}>
-            <Input
+        <Container style={{ minHeight: '15em', padding: '0em' }}>
+          <Form>
+            <Form.Input
               type="text"
               ref={c => {
                 this.message = c;
               }}
               placeholder="Enter your message"
               value={this.state.message}
+              width="20"
               onChange={event => {
                 this.setState({ message: event.target.value });
               }}
-            />{' '}
-            <Button primary onClick={this.handleSubmit}>
+            />
+            <Button attached="bottom" primary onClick={this.handleSubmit}>
               Send
             </Button>
-          </form>
-          <ul>
+          </Form>
+          <ui>
             {this.state.messages
               .slice(0)
               .reverse()
               .map(msg => (
-                <li key={`chat.msg.${msg.id}`}>
-                  <Label as="a" outline inverted>
-                    <Icon name="chat" color="blue" />
-                    {msg.from}
-                  </Label>{' '}
-                  <Label basic color="teal" pointing="left">
-                    {msg.text}
-                  </Label>
-                </li>
+                <ui key={`chat.msg.${msg.id}`}>
+                  <Animate
+                    play
+                    startStyle={
+                      {
+                        translateX: (900)
+                      }
+                    }
+                    endStyle={
+                      {
+                        translateX: (0)
+                      }
+                    }
+                    delaySeconds="0.1"
+                    durationSeconds=".65"
+                    easeType="easeInOutBack"
+                  >
+                    <Label Icon name="chat" color="blue" startStyle={{ margin: '5px' }}>
+                      <Icon name="chat" />
+                      {msg.from}
+                    </Label>
+                    <Label basic color="teal" pointing="left">
+                      {' '}
+                      {msg.text}
+                    </Label>
+                  </Animate>
+                </ui>
               ))}
-          </ul>
+          </ui>
         </Container>
       </di>
     );
@@ -100,5 +121,5 @@ class Chat extends Component {
 }
 
 export default Chat;
-
-// To show that chat messages cahn come in any method, some are in tags, some are in labels... get creative! semantic-ui-REact is pretty fun.
+// To show that chat messages cahn come in any method, some are in tags,
+// some are in labels...get creative! semantic - ui - REact is pretty fun.

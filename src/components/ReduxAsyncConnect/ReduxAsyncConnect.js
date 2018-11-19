@@ -10,11 +10,11 @@ class ReduxAsyncConnect extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     history: PropTypes.objectOf(PropTypes.any).isRequired,
-    location: PropTypes.objectOf(PropTypes.any).isRequired
+    location: PropTypes.objectOf(PropTypes.any).isRequired,
   };
 
   state = {
-    previousLocation: null
+    previousLocation: null,
   };
 
   componentWillMount() {
@@ -41,7 +41,7 @@ class ReduxAsyncConnect extends Component {
         match,
         params,
         history,
-        location: nextProps.location
+        location: nextProps.location,
       });
       if (__CLIENT__) {
         await trigger('defer', components, {
@@ -50,7 +50,7 @@ class ReduxAsyncConnect extends Component {
           match,
           params,
           history,
-          location: nextProps.location
+          location: nextProps.location,
         });
       }
 

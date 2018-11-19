@@ -3,7 +3,7 @@ import Loadable from 'react-loadable';
 
 const SurveyLoadable = Loadable({
   loader: () => import('./Survey'),
-  loading: () => <div>Loading</div>
+  loading: () => <div>Loading</div>,
 });
 
 export default SurveyLoadable;

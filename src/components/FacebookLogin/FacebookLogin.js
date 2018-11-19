@@ -14,7 +14,7 @@ class FacebookLogin extends Component {
     language: PropTypes.string,
     textButton: PropTypes.string,
     typeButton: PropTypes.string,
-    component: PropTypes.func.isRequired
+    component: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
@@ -25,7 +25,7 @@ class FacebookLogin extends Component {
     cookie: false,
     version: '2.3',
     language: 'en_US',
-    autoLoad: false
+    autoLoad: false,
   };
 
   componentDidMount() {
@@ -46,7 +46,7 @@ class FacebookLogin extends Component {
         version: `v${version}`,
         appId,
         xfbml,
-        cookie
+        cookie,
       });
 
       if (autoLoad || window.location.search.includes('facebookdirect')) {

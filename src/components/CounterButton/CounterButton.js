@@ -28,7 +28,7 @@ class CounterButton extends Component {
         {' '}
         {count}
         {' '}
-time
+        time
         {count === 1 ? '' : 's'}
         .
       </Button>

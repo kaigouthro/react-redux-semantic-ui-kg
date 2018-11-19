@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as authActions from 'redux/modules/auth';
 
-@connect(null, authActions)
+@connect(
+  null,
+  authActions
+)
 class Logout extends Component {
   static propTypes = {
-    logout: PropTypes.func.isRequired
+    logout: PropTypes.func.isRequired,
   };
 
   componentWillMount() {

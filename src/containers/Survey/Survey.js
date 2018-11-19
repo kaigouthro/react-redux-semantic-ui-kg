@@ -9,12 +9,15 @@ import reducer from 'redux/modules/survey';
 import SurveyForm from 'components/SurveyForm/SurveyForm';
 
 @provideHooks({
-  fetch: ({ store: { inject } }) => inject({ survey: reducer })
+  fetch: ({ store: { inject } }) => inject({ survey: reducer }),
 })
-@connect(() => ({}), { initialize })
+@connect(
+  () => ({}),
+  { initialize }
+)
 class Survey extends Component {
   static propTypes = {
-    initialize: PropTypes.func.isRequired
+    initialize: PropTypes.func.isRequired,
   };
 
   handleSubmit = data => {
@@ -28,7 +31,7 @@ class Survey extends Component {
       email: 'bobby@gmail.com',
       occupation: 'Redux Wizard',
       currentlyEmployed: true,
-      sex: 'male'
+      sex: 'male',
     });
   };
 
@@ -51,9 +54,9 @@ class Survey extends Component {
           <li>Validation errors are hidden onChange when the error is rectified</li>
           <li>
             <code>valid</code>
-            ,
+,
             <code>invalid</code>
-            ,
+,
             <code>pristine</code>
             {' '}
 and
@@ -82,7 +85,7 @@ flags will be based on those values.
           Pardon the use of
           {' '}
           <code>window.alert()</code>
-          , but I wanted to keep this component stateless.
+, but I wanted to keep this component stateless.
         </p>
 
         <div style={{ textAlign: 'center', margin: 15 }}>
@@ -97,7 +100,8 @@ Initialize Form
           The circles to the left of the inputs correspond to flags provided by
           {' '}
           <code>redux-form</code>
-          : Touched, Visited, Active, and Dirty.
+: Touched,
+          Visited, Active, and Dirty.
         </p>
 
         <SurveyForm onSubmit={this.handleSubmit} />

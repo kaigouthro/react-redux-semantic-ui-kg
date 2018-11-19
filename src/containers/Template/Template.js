@@ -5,15 +5,7 @@ import Helmet from 'react-helmet';
 // Two ways to import, either all on one line, or, if you like, multiples.
 
 import {
-  List,
-  Segment,
-  Container,
-  Divider,
-  Message,
-  Header,
-  Icon,
-  Image,
-  Grid,
+  List, Segment, Container, Divider, Message, Header, Icon, Image, Grid
 } from 'semantic-ui-react';
 
 // You can delete everything you want pretty much and start fresh.
@@ -52,17 +44,14 @@ class Template extends Component {
             <Header as="h2" icon>
               <Icon name="copy outline" />
               Template Page
-              <Header.Subheader>
-                Adding pages to your app, and other help.. for noobs, by a noob.
-              </Header.Subheader>
+              <Header.Subheader>Adding pages to your app, and other help.. for noobs, by a noob.</Header.Subheader>
             </Header>
           </Container>
           <Message floating compact size="tiny">
             {' '}
-            Using your prefered IDE, ie: Visual Studio Code, search all files
-            inside the 'src' folder for the word 'template' and you'll find all
-            the references to this page. However, For the Quick visual, Below
-            are the files you will need to modify, and the folders they are in.
+            Using your prefered IDE, ie: Visual Studio Code, search all files inside the 'src' folder for the word
+            'template' and you'll find all the references to this page. However, For the Quick visual, Below are the
+            files you will need to modify, and the folders they are in.
           </Message>
         </Segment>
         <Segment color="teal" raised>
@@ -70,64 +59,51 @@ class Template extends Component {
             <Grid.Column size="equal">
               <Message floating compact size="tiny">
                 <p>
-                  if you're using VScode, or any kind of halway customized IDE,
-                  choose 'Typescript React' as a language. The colour coding and
-                  automatic foratting with 'Prettier' and 'Beautify' and
-                  'ESLINT' work well with this kit. I also wanted to include a
-                  personal touch with my first contribution to any git, ever.
-                  (this page and the modifications to the other files denoting
-                  'template'), so in addition to that, i'm adding this link to a
-                  public Gist on github, a copy of my VScode sync settings, and
-                  installed extensions i put together painstakingly dialed in
-                  for this kit.
-                  <a href="https://gist.github.com/kaigouthro/b2c9cafae8a9a480b0802847c8cdba18">
-                    . Check it here
-                  </a>{' '}
-                  fork it to your own gist and use{' '}
+                  if you're using VScode, or any kind of halway customized IDE, choose 'Typescript React' as a language.
+                  The colour coding and automatic foratting with 'Prettier' and 'Beautify' and 'ESLINT' work well with
+                  this kit. I also wanted to include a personal touch with my first contribution to any git, ever. (this
+                  page and the modifications to the other files denoting 'template'), so in addition to that, i'm adding
+                  this link to a public Gist on github, a copy of my VScode sync settings, and installed extensions i
+                  put together painstakingly dialed in for this kit.
+                  <a href="https://gist.github.com/kaigouthro/b2c9cafae8a9a480b0802847c8cdba18">. Check it here</a>
+                  {' '}
+                  fork
+                                    it to your own gist and use
+                  {' '}
                   <a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">
                     {' '}
                     Vs settings sync addon.
-                  </a>{' '}
-                  I tooled it specially for this project. You wll still have to
-                  'yarn add eslint tslint' and maybe one or two other things to
-                  make it more 'you'.. But pretty much this is just my way of
-                  contributing to the package, making it ~that~ mueasier to get
-                  going. All the extensions and settings are react exclusive,
-                  not just a general 'anything universal' set-up. It has
-                  functionality and readability enhancements, a lot of theme
-                  goodness, the material icons pack, and everything about
-                  colorizing and matching things up, subtle underline pairs, and
-                  more. I Highly reccomend <strong>"Hack"</strong> as a font
-                  choice for your editor, but any of these are fantastic:{' '}
-                  <a href="https://sourcefoundry.org/hack/">Hack</a>, or{' '}
-                  <a href="https://fonts.google.com/specimen/Anonymous+Pro">
-                    Anonymous Pro
                   </a>
-                  , or{' '}
-                  <a href="https://fonts.google.com/specimen/Source+Code+Pro">
-                    Source Code Pro
-                  </a>
-                  , or if you"re feeling futuristic{' '}
-                  <a href="https://fonts.google.com/specimen/Space+Mono">
-                    Space Mono
-                  </a>
-                  . For the other newer coders like myself, Hopefully this gives
-                  you a leap forward, and you don"t have to spend the hours i"m
-                  spending making this more friendly a starter for people like
-                  me. Please enjoy, and <strong>Thank</strong> the Original
-                  Creators and Maintainers of the project. they are the real
-                  heroes.
+                  {' '}
+                  I tooled it specially for this project. You wll still have to 'yarn add eslint tslint' and maybe one
+                  or two other things to make it more 'you'.. But pretty much this is just my way of contributing to the
+                  package, making it ~that~ mueasier to get going. All the extensions and settings are react exclusive,
+                  not just a general 'anything universal' set-up. It has functionality and readability enhancements, a
+                  lot of theme goodness, the material icons pack, and everything about colorizing and matching things
+                  up, subtle underline pairs, and more. I Highly reccomend
+                  <strong>"Hack" </strong>
+                  as a font choice for your editor, but any of these are fantastic:
+                  {' '}
+                  <a href="https://sourcefoundry.org/hack/">Hack</a>
+                  , or
+                  {' '}
+                  <a href="https://fonts.google.com/specimen/Anonymous+Pro">Anonymous Pro</a>
+                  , or
+                  {' '}
+                  <a href="https://fonts.google.com/specimen/Source+Code+Pro">Source Code Pro</a>
+                  , or if you"re feeling
+                                    futuristic
+                  <a href="https://fonts.google.com/specimen/Space+Mono">Space Mono</a>
+                  . For the other newer
+                                    coders like myself, Hopefully this gives you a leap forward, and you don"t have to spend the hours i"m
+                                    spending making this more friendly a starter for people like me. Please enjoy, and
+                  <strong>Thank</strong>
+                  the Original Creators and Maintainers of the project. they are the real heroes.
                 </p>
               </Message>
             </Grid.Column>
             <Grid.Column size="equal">
-              <Image
-                centered
-                fluid
-                src={searchtemplateimage}
-                alt="search in  vscode"
-                rounded
-              />
+              <Image centered medium src={searchtemplateimage} alt="search in  vscode" rounded />
             </Grid.Column>
           </Grid>
           <Container>
@@ -141,33 +117,26 @@ class Template extends Component {
                         <List.Icon color="orange" name="folder open" />
                         <List.Content>
                           <List.Header>src</List.Header>
-                          <List.Description>
-                            Source files for project
-                          </List.Description>
+                          <List.Description>Source files for project</List.Description>
                           <List.List>
                             <List.Item>
                               <List.Icon color="purple" name="folder open" />
                               <List.Content>
                                 <List.Header>Containers</List.Header>
-                                <List.Description>
-                                  Folders equal to Pages of your app.
-                                </List.Description>
+                                <List.Description>Folders equal to Pages of your app.</List.Description>
                                 <List.List>
                                   <List.Item>
                                     <List.Icon color="teal" name="folder" />
                                     <List.Content>
                                       <List.Header>App</List.Header>
-                                      <List.Description>
-                                        The Main App Container Folder
-                                      </List.Description>
+                                      <List.Description>The Main App Container Folder</List.Description>
                                       <List.List>
                                         <List.Item>
                                           <List.Icon color="blue" name="file" />
                                           <List.Content>
                                             <List.Header>App.js</List.Header>
                                             <List.Description>
-                                              You"ll find template has been
-                                              added to the main app here
+                                              You"ll find template has been added to the main app here
                                             </List.Description>
                                           </List.Content>
                                         </List.Item>
@@ -178,31 +147,23 @@ class Template extends Component {
                                     <List.Icon color="teal" name="folder" />
                                     <List.Content>
                                       <List.Header>Template</List.Header>
-                                      <List.Description>
-                                        The Folder containing this page
-                                      </List.Description>
+                                      <List.Description>The Folder containing this page</List.Description>
                                       <List.List>
                                         <List.Item>
                                           <List.Icon color="blue" name="file" />
                                           <List.Content>
-                                            <List.Header>
-                                              Template.js
-                                            </List.Header>
+                                            <List.Header>Template.js</List.Header>
                                             <List.Description>
-                                              This is the template page that is
-                                              added to the main app.
+                                              This is the template page that is added to the main app.
                                             </List.Description>
                                           </List.Content>
                                         </List.Item>
                                         <List.Item>
                                           <List.Icon color="blue" name="file" />
                                           <List.Content>
-                                            <List.Header>
-                                              Loadable.js
-                                            </List.Header>
+                                            <List.Header>Loadable.js</List.Header>
                                             <List.Description>
-                                              Goes hand in hand with each of the
-                                              Pages
+                                              Goes hand in hand with each of the Pages
                                             </List.Description>
                                           </List.Content>
                                         </List.Item>
@@ -216,18 +177,14 @@ class Template extends Component {
                               <List.Icon color="purple" name="file" />
                               <List.Content>
                                 <List.Header>config.js</List.Header>
-                                <List.Description>
-                                  App"s Main Config file
-                                </List.Description>
+                                <List.Description>App"s Main Config file</List.Description>
                               </List.Content>
                             </List.Item>
                             <List.Item>
                               <List.Icon color="purple" name="file" />
                               <List.Content>
                                 <List.Header>routes.js</List.Header>
-                                <List.Description>
-                                  All the data routes for your app pages.
-                                </List.Description>
+                                <List.Description>All the data routes for your app pages.</List.Description>
                               </List.Content>
                             </List.Item>
                           </List.List>
@@ -239,12 +196,7 @@ class Template extends Component {
                 <Grid.Column width="equal">
                   <Segment raised color="blue">
                     <Header as="h2">
-                      <Icon
-                        bordered
-                        inverted
-                        color="teal"
-                        name="images outline"
-                      />
+                      <Icon bordered inverted color="teal" name="images outline" />
                       <Header.Content>
                         Bonus Resources
                         <Header.Subheader>
@@ -255,32 +207,16 @@ class Template extends Component {
                       </Header.Content>
                     </Header>
                     <List bulleted>
-                      <List.Item href="https://dribbble.com/">
-                        Dribbbl
-                      </List.Item>
-                      <List.Item href="https://tripwire.github.io/octagon/">
-                        Octagon (for semantic-ui-react)
-                      </List.Item>
-                      <List.Item href="http://fltdsgn.com/">
-                        Flat UI Design
-                      </List.Item>
+                      <List.Item href="https://dribbble.com/">Dribbbl</List.Item>
+                      <List.Item href="https://tripwire.github.io/octagon/">Octagon (for semantic-ui-react)</List.Item>
+                      <List.Item href="http://fltdsgn.com/">Flat UI Design</List.Item>
                       <List.Item href="https://www.canva.com/">Canva</List.Item>
-                      <List.Item href="https://unsplash.com/">
-                        Unsplash
-                      </List.Item>
-                      <List.Item href="http://startupstockphotos.com/">
-                        Startup Stock Photos
-                      </List.Item>
-                      <List.Item href="http://deathtothestockphoto.com/">
-                        Death to the Stock Photo
-                      </List.Item>
-                      <List.Item href="http://fortawesome.github.io/Font-Awesome/">
-                        Font Awesome
-                      </List.Item>
+                      <List.Item href="https://unsplash.com/">Unsplash</List.Item>
+                      <List.Item href="http://startupstockphotos.com/">Startup Stock Photos</List.Item>
+                      <List.Item href="http://deathtothestockphoto.com/">Death to the Stock Photo</List.Item>
+                      <List.Item href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</List.Item>
                       <List.Item href="https://icomoon.io/">Ico Moon</List.Item>
-                      <List.Item href="https://elements.envato.com/">
-                        Envato Elements
-                      </List.Item>
+                      <List.Item href="https://elements.envato.com/">Envato Elements</List.Item>
                     </List>
                   </Segment>
                   <p />

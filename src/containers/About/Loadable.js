@@ -3,7 +3,7 @@ import Loadable from 'react-loadable';
 
 const AboutLoadable = Loadable({
   loader: () => import('./About'),
-  loading: () => <div>Loading</div>
+  loading: () => <div>Loading</div>,
 });
 
 export default AboutLoadable;

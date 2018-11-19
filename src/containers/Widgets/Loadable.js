@@ -3,7 +3,7 @@ import Loadable from 'react-loadable';
 
 const WidgetsLoadable = Loadable({
   loader: () => import('./Widgets'),
-  loading: () => <div>Loading</div>
+  loading: () => <div>Loading</div>,
 });
 
 export default WidgetsLoadable;

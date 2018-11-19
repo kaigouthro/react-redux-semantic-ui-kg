@@ -4,18 +4,21 @@ import { connect } from 'react-redux';
 import { load } from 'redux/modules/info';
 import { Message, Button } from 'semantic-ui-react';
 
-@connect(state => ({ info: state.info.data }), { load })
+@connect(
+  state => ({ info: state.info.data }),
+  { load }
+)
 class InfoBar extends Component {
   static propTypes = {
     info: PropTypes.shape({
       message: PropTypes.string,
-      time: PropTypes.number
+      time: PropTypes.number,
     }),
-    load: PropTypes.func.isRequired
+    load: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
-    info: null
+    info: null,
   };
 
   render() {

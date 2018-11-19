@@ -7,7 +7,7 @@ class Notifs extends Component {
   static propTypes = {
     notifs: PropTypes.arrayOf(PropTypes.object).isRequired,
     NotifComponent: PropTypes.func.isRequired,
-    className: PropTypes.string.isRequired
+    className: PropTypes.string.isRequired,
   };
 
   render() {
@@ -15,7 +15,9 @@ class Notifs extends Component {
 
     return (
       <div className={`notif-container ${className}`}>
-        {notifs.map(notif => <NotifComponent key={notif.id} message={notif.message} kind={notif.kind} />)}
+        {notifs.map(notif => (
+          <NotifComponent key={notif.id} message={notif.message} kind={notif.kind} />
+        ))}
       </div>
     );
   }
