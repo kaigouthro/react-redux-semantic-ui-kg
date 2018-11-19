@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js - add react-headroom --save
+  C:\Program Files\nodejs\node.exe C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js upgrade
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Kai\bin;C:\Python27;C:\Python27\Scripts;C:\ProgramData\Boxstarter;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NetMake\v9\components\php;C:\Program Files\PuTTY;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Ruby25-x64\bin;C:\Users\Kai\AppData\Local\Microsoft\WindowsApps;C:\Users\Kai\AppData\Local\GitHubDesktop\bin;C:\Users\Kai\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Kai\AppData\Roaming\npm
@@ -14,17 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/-: Not found
-      at Request.params.callback [as _callback] (C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:65894:18)
-      at Request.self.callback (C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:129018:22)
-      at Request.emit (events.js:182:13)
-      at Request.<anonymous> (C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:129990:10)
-      at Request.emit (events.js:182:13)
-      at IncomingMessage.<anonymous> (C:\Users\Kai\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:129912:12)
-      at Object.onceWrapper (events.js:273:13)
-      at IncomingMessage.emit (events.js:187:15)
-      at endReadableNT (_stream_readable.js:1094:12)
-      at process.internalTickCallback (internal/process/next_tick.js:72:19)
+  Error: EPERM: operation not permitted, copyfile 'C:\Users\Kai\AppData\Local\Yarn\Cache\v4\npm-axe-core-3.0.0-beta.2-82a13d371268034352bba2bcb263c5625b3e4a09\node_modules\axe-core\test\integration\full\html-has-lang\frames\level2-a.html' -> 'H:\WWW CODE\Sandbox\react-redux-semantic-ui-sandbox\node_modules\axe-core\test\integration\full\html-has-lang\frames\level2-a.html'
 
 npm manifest: 
   {
@@ -2639,8 +2629,7 @@ Lockfile:
       is-glob "^2.0.0"
       path-is-absolute "^1.0.0"
       readdirp "^2.0.0"
-    optionalDependencies:
-      fsevents "^1.0.0"
+  
   
   chokidar@^2.0.2:
     version "2.0.4"
@@ -2659,8 +2648,6 @@ Lockfile:
       path-is-absolute "^1.0.0"
       readdirp "^2.0.0"
       upath "^1.0.5"
-    optionalDependencies:
-      fsevents "^1.2.2"
   
   chownr@^1.0.1, chownr@^1.1.1:
     version "1.1.1"
@@ -4841,14 +4828,6 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
     integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  
-  fsevents@^1.0.0, fsevents@^1.2.2, fsevents@^1.2.3:
-    version "1.2.4"
-    resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.2.4.tgz#f41dcb1af2582af3692da36fc55cbd8e1041c426"
-    integrity sha512-z8H8/diyk76B7q5wg+Ud0+CqzcAF3mBBI/bA5ne5zrRUUIvNkJY//D3BqyH571KuAC4Nr7Rw7CjWX4r0y9DvNg==
-    dependencies:
-      nan "^2.9.2"
-      node-pre-gyp "^0.10.0"
   
   fstream@^1.0.0, fstream@^1.0.2:
     version "1.0.11"
@@ -10368,8 +10347,6 @@ Lockfile:
       minimist "^1.1.1"
       walker "~1.0.5"
       watch "~0.18.0"
-    optionalDependencies:
-      fsevents "^1.2.3"
   
   sass-graph@^2.2.4:
     version "2.2.4"

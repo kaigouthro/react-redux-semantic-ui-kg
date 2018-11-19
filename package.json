@@ -12,9 +12,9 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dongcai/react-redux-semantic-ui"
+    "url": "https://github.com/kaigouthro/react-redux-semantic-ui"
   },
-  "homepage": "https://github.com/dongcai/react-redux-semantic-ui",
+  "homepage": "https://github.com/kaigouthro/react-redux-semantic-ui",
   "keywords": [
     "react",
     "isomorphic",
