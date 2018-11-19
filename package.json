@@ -46,6 +46,7 @@
     "postinstall": "concurrently \"npm run build\" \"npm run build-dlls\"",
     "prettier": "prettier-eslint --write --eslint-config-path .eslintrc './+(src|api)/**/*.js'",
     "lint": "eslint -c .eslintrc api src",
+    "lintfix": "eslint -c .eslintrc api src --fix",
     "test": "cross-env NODE_PATH=src NODE_ENV=test jest src",
     "test-node": "cross-env NODE_PATH=api jest api --verbose --debug",
     "lighthouse-report": "lighthouse http://localhost:8080 --view",

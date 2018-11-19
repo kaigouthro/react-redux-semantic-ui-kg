@@ -377,7 +377,7 @@ uses the socket.io technology for real-time communication between
 
           <p>Thanks for taking the time to check this out.</p>
 
-          <p>â€ Erik Rasmussen</p>
+          <p>ï¿½ Erik Rasmussen</p>
         </Container>
       </div>
     );

@@ -11,4 +11,6 @@ webpack/dlls/*.json
 api/**/*.nedb
 *.report.html
 coverage
-static/Thumbs.db
+*/Thumbs.db
+settings.json
+.vscode/settings.json

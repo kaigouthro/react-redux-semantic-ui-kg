@@ -9,54 +9,57 @@ mine are more like many little iterations, not all of which are complete or perf
 
 # This is the KG noob-friendly version
 
->> This Fork's Status. do not let it reflect on the main line. mine will be missing a few things from the main line, and have some other things more tuned to my priorities, ie: Visual design language, and system operational flow and compartmentalized organization right from the start. some things are going to be moved and organized into subfolders, including additional compatible components and themes, as well as a style-guide page built right in for the dev's like myself who want to have their cheat sheet right on hand within their own dev environent. i also plan on going through deep diving at all those deprecated dependencies and updating code through the whole project to account for newer better dependencies. it's not cool to see this project relying on a v 1.0.5 _CORE_ dependency that's out  at v. 6.0.0, meanwhile a lot of other plugins can't update to their newest versions because it would break. Lots of this project still depends on 3-4 year old dependencies, and dependencies stating very clkearly "discontinued, do not use, use this instead, since 2016"..
+> > This Fork's Status. do not let it reflect on the main line. mine will be missing a few things from the main line, and have some other things more tuned to my priorities, ie: Visual design language, and system operational flow and compartmentalized organization right from the start. some things are going to be moved and organized into subfolders, including additional compatible components and themes, as well as a style-guide page built right in for the dev's like myself who want to have their cheat sheet right on hand within their own dev environent. i also plan on going through deep diving at all those deprecated dependencies and updating code through the whole project to account for newer better dependencies. it's not cool to see this project relying on a v 1.0.5 _CORE_ dependency that's out at v. 6.0.0, meanwhile a lot of other plugins can't update to their newest versions because it would break. Lots of this project still depends on 3-4 year old dependencies, and dependencies stating very clkearly "discontinued, do not use, use this instead, since 2016"..
 
 So.....
 i'm going to update whatever i can figure out how to as a side project to this fork. i'll have one that follows and can interchange some pieces with the main branch, and then i'll work on my own branch as well, removing some of the demos, because you can always see them in the main branch, and they are complicated, and i'mk making a version with less complication and easier learning curve and faster and more stable setup by the way of not having as many working examples of full fledged systems, but have a few very simple components used in a way that makes them very easy to understand when reading the code, which will be commented fairly extensively.
 
+---
+
+now, a slightly edited Forward, originally written by the OG i updated it for the 4 year time jump, from will be to was, want to, to "did"...
 
 ---
- now, a slightly edited Forward, originally written by the OG i updated it for the 4 year time jump, from will be to was, want to, to "did"...
 
----
 ## Demo - The Original
+
 [React Redux Semantic UI](https://react-redux-semantic-ui.shopecific.com/)
 
 ## About
 
 This is a starter boilerplate app Erik Rasmussen pioneered, and later Kévin Berthommier and Dong Cai maintained, and improved, putting together and using the following technologies in a very crafty way to make "lightning fast." a reality.
 
-* [Universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) rendering
-* Both a client and a seperate API server making simultaneous calls.
-* [React](https://github.com/facebook/react)
-* [React Router](https://github.com/reactjs/react-router)
-* [Express](http://expressjs.com)
-* [Feathers](http://feathersjs.com/) (based on express and websockets, fast!)
-* [Passport](http://passportjs.org), [feathers-authentication](https://github.com/feathersjs/feathers-authentication) and [redux-auth-wrapper](https://github.com/mjrussell/redux-auth-wrapper) for authentication
-* [Babel](http://babeljs.io) for ES6 and ES7 magic
-* [Webpack](https://webpack.js.org/) for bundling
-* [Webpack Dev Middleware](http://webpack.github.io/docs/webpack-dev-middleware.html)
-* [Webpack Hot Middleware](https://github.com/glenjamin/webpack-hot-middleware)
-* [Redux](https://github.com/reactjs/redux)'s futuristic [Flux](https://facebook.github.io/react/blog/2014/05/06/flux.html) implementation
-* [Redux Dev Tools](https://github.com/reactjs/redux-devtools) for next generation DX (developer experience). Watch [Dan Abramov's talk](https://www.youtube.com/watch?v=xsSnOQynTHs). (Check the browser extension for chrome as well)
-* [React Router Redux](https://github.com/reactjs/react-router-redux) Redux/React Router bindings.
-* [ESLint](http://eslint.org) to maintain a consistent code style
-* [redux-form](http://redux-form.com/) to manage form state in Redux
-* [lru-memoize](https://github.com/erikras/lru-memoize) to speed up form validation
-* [multireducer](https://github.com/erikras/multireducer) to combine single reducers into one key-based reducer
-* [style-loader](https://github.com/webpack/style-loader), [sass-loader](https://github.com/jtangelder/sass-loader) and [less-loader](https://github.com/webpack/less-loader) to allow import of stylesheets in plain css, sass and less,
-* [semantic-ui-react](https://github.com/Semantic-Org/Semantic-UI-React)
-* [font-awesome](https://github.com/FortAwesome/Font-Awesome)
-* [react-helmet](https://github.com/nfl/react-helmet) to manage title and meta tag information on both server and client
-* [webpack-isomorphic-tools](https://github.com/halt-hammerzeit/webpack-isomorphic-tools) to allow require() work for statics both on client and server
-* [Jest](https://facebook.github.io/jest/) to allow writing unit tests for the project.
+- [Universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) rendering
+- Both a client and a seperate API server making simultaneous calls.
+- [React](https://github.com/facebook/react)
+- [React Router](https://github.com/reactjs/react-router)
+- [Express](http://expressjs.com)
+- [Feathers](http://feathersjs.com/) (based on express and websockets, fast!)
+- [Passport](http://passportjs.org), [feathers-authentication](https://github.com/feathersjs/feathers-authentication) and [redux-auth-wrapper](https://github.com/mjrussell/redux-auth-wrapper) for authentication
+- [Babel](http://babeljs.io) for ES6 and ES7 magic
+- [Webpack](https://webpack.js.org/) for bundling
+- [Webpack Dev Middleware](http://webpack.github.io/docs/webpack-dev-middleware.html)
+- [Webpack Hot Middleware](https://github.com/glenjamin/webpack-hot-middleware)
+- [Redux](https://github.com/reactjs/redux)'s futuristic [Flux](https://facebook.github.io/react/blog/2014/05/06/flux.html) implementation
+- [Redux Dev Tools](https://github.com/reactjs/redux-devtools) for next generation DX (developer experience). Watch [Dan Abramov's talk](https://www.youtube.com/watch?v=xsSnOQynTHs). (Check the browser extension for chrome as well)
+- [React Router Redux](https://github.com/reactjs/react-router-redux) Redux/React Router bindings.
+- [ESLint](http://eslint.org) to maintain a consistent code style
+- [redux-form](http://redux-form.com/) to manage form state in Redux
+- [lru-memoize](https://github.com/erikras/lru-memoize) to speed up form validation
+- [multireducer](https://github.com/erikras/multireducer) to combine single reducers into one key-based reducer
+- [style-loader](https://github.com/webpack/style-loader), [sass-loader](https://github.com/jtangelder/sass-loader) and [less-loader](https://github.com/webpack/less-loader) to allow import of stylesheets in plain css, sass and less,
+- [semantic-ui-react](https://github.com/Semantic-Org/Semantic-UI-React)
+- [font-awesome](https://github.com/FortAwesome/Font-Awesome)
+- [react-helmet](https://github.com/nfl/react-helmet) to manage title and meta tag information on both server and client
+- [webpack-isomorphic-tools](https://github.com/halt-hammerzeit/webpack-isomorphic-tools) to allow require() work for statics both on client and server
+- [Jest](https://facebook.github.io/jest/) to allow writing unit tests for the project.
 
 These Heroes cobbled this together from a wide variety of similar "starter" repositories. As I (KG) post this in November 2018, i think back to how forward thinking it was back in June 2015 to have created this, all of these libraries were and still are right at the bleeding edge of web development. They may fall out of fashion as quickly as they have come into it, (KG: i doubt it) but they personally believed that this stack was the future of web development and will survive for several years. They went on building their new projects like this, and they, as well as I recommend that you do, too.
 
 #
-## [ /KG's edited forward> ] ##
-#
 
+## [ /KG's edited forward> ]
+
+#
 
 ## Features
 
@@ -148,7 +151,7 @@ You can also use `app` for RESTful calls to api.
 
 Then we perform [server-side data fetching](#server-side-data-fetching), wait for the data to be loaded, and render the page with the now-fully-loaded `redux` state.
 
-The last interesting bit of the main routing section of `server.js` is that we swap in the hashed script and css from the `webpack-assets.json` that the Webpack Dev Server – or the Webpack build process on production – has spit out on its last run. You won't have to deal with `webpack-assets.json` manually because [webpack-isomorphic-tools](https://github.com/halt-hammerzeit/webpack-isomorphic-tools) take care of that.
+The last interesting bit of the main routing section of `server.js` is that we swap in the hashed script and css from the `webpack-assets.json` that the Webpack Dev Server - or the Webpack build process on production – has spit out on its last run. You won't have to deal with `webpack-assets.json` manually because [webpack-isomorphic-tools](https://github.com/halt-hammerzeit/webpack-isomorphic-tools) take care of that.
 
 We also spit out the `redux` state into a global `window.__data` variable in the webpage to be loaded by the client-side `redux` code.
 
@@ -167,7 +170,7 @@ The middleware, [`clientMiddleware.js`](https://github.com/bertho-zero/react-red
 1. To allow the action creators access to the client API facade. Remember this is the same on both the client and the server, and cannot simply be `import`ed because it holds the cookie needed to maintain session on server-to-server requests.
 2. To allow some actions to pass a "promise generator", a function that takes the API client and returns a promise. Such actions require three action types, the `REQUEST` action that initiates the data loading, and a `SUCCESS` and `FAILURE` action that will be fired depending on the result of the promise. There are other ways to accomplish this, some discussed [here](https://github.com/reactjs/redux/issues/99), which you may prefer, but to the author of this example, the middleware way feels cleanest.
 
-#### Redux Modules... *What the Duck*?
+#### Redux Modules... _What the Duck_?
 
 The `src/redux/modules` folder contains "modules" to help
 isolate concerns within a Redux application (aka [Ducks](https://github.com/erikras/ducks-modular-redux), a Redux Style Proposal that I came up with). I encourage you to read the
@@ -249,10 +252,13 @@ require('aModule/dist/style.css');
 2. `localIdentName...`
 
 Before:
+
 ```javascript
 { test: /\.less$/, loader: 'style!css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!autoprefixer?browsers=last 2 version!less?outputStyle=expanded&sourceMap' },
 ```
+
 After:
+
 ```javascript
 { test: /\.less$/, loader: 'style!css?importLoaders=2&sourceMap!autoprefixer?browsers=last 2 version!less?outputStyle=expanded&sourceMap' },
 ```
@@ -273,11 +279,13 @@ To get this project to work on Heroku, you need to:
 2. `heroku config:set NODE_ENV=production`
 3. `heroku config:set NODE_PATH=./src`
 4. `heroku config:set NPM_CONFIG_PRODUCTION=false`
-  * This is to enable webpack to run the build on deploy.
+
+- This is to enable webpack to run the build on deploy.
 
 The first deploy might take a while, but after that your `node_modules` dir should be cached.
 
 ## Deployment on your server with PM2 (optional)
+
 1. Install PM2 `npm install pm2@latest -g`
 2. Run `sh deploylment/deploy.sh` (please check deploy.sh for comments)
 
@@ -285,12 +293,11 @@ The first deploy might take a while, but after that your `node_modules` dir shou
 
 This project moves fast and has an active community, so if you have a question that is not answered below please file an issue.
 
-
 ## Roadmap
 
 Although this isn't a library, we recently started versioning to make it easier to track breaking changes and emerging best practices.
 
-* [Inline Styles](docs/InlineStyles.md) - CSS is dead
+- [Inline Styles](docs/InlineStyles.md) - CSS is dead
 
 ## Contributing
 
@@ -299,10 +306,12 @@ I am more than happy to accept external contributions to the project in the form
 If you would like to submit a pull request, please make an effort to follow the guide in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
+
 Thanks for checking this out.
 
 Created by: Erik Rasmussen, [@erikras](https://twitter.com/erikras)
 
 Maintened by:
+
 - Kévin Berthommier, [@bertho-zero](https://github.com/bertho-zero)
 - Dong Cai, [@dongcai](https://github.com/dongcai)
