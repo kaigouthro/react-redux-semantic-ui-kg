@@ -86,22 +86,13 @@ class Chat extends Component {
               .reverse()
               .map(msg => (
                 <ui key={`chat.msg.${msg.id}`}>
-                  <Animate
-                    play
-                    startStyle={
-                      {
-                        translateX: (900)
-                      }
-                    }
-                    endStyle={
-                      {
-                        translateX: (0)
-                      }
-                    }
+                <Animate
+                    play='true'
+                    startStyle={{"transform":"translateX(60em)", "opacity": '0'}}
+                    endStyle={{ "transform": "translateX(0)", "opacity": '1'}}
                     delaySeconds="0.1"
-                    durationSeconds=".65"
-                    easeType="easeInOutBack"
-                  >
+                    durationSeconds=".5"
+                >
                     <Label Icon name="chat" color="blue" startStyle={{ margin: '5px' }}>
                       <Icon name="chat" />
                       {msg.from}

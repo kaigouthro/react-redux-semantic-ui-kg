@@ -31,11 +31,11 @@ const NavBarMobile = props => (
       </Menu>
     </Sidebar>
     <Sidebar.Pusher dimmed={props.visible} onClick={props.onPusherClick} style={{ minHeight: '45vh' }}>
+    <Headroom>
       <Responsive minWidth={769}>
-        <Headroom style={{ webkitTransition: 'flip 2.5s ease-in-out' }}>
           <NavBarDesktop leftItems={props.leftItems} rightItems={props.rightItems} />
-        </Headroom>
       </Responsive>
+      </Headroom>
       <Responsive maxWidth={768}>
         <Menu inverted>
           <Menu.Item onClick={props.onToggle}>
