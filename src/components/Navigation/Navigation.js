@@ -11,7 +11,7 @@ import {
 
 const NavBarMobile = props => (
   <Sidebar.Pushable>
-    <Sidebar as={Menu} animation="scale down" inverted visible={props.visible} style={{ height: '100vh' }}>
+    <Sidebar as={Menu} animation="scale down" inverted visible={props.visible} style={{ height: '100vmax' }}>
       <Icon className={props.styles.closeIt} name="close" size="large" onClick={props.onToggle} />
       <Menu vertical inverted fluid>
         <Menu.Item>

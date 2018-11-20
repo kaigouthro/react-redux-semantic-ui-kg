@@ -60,7 +60,7 @@ class Chat extends Component {
     const styles = require('./Chat.scss');
 
     return (
-      <di className={`${styles.chat} container`}>
+      <div className={`${styles.chat} container`}>
         <h1>Chat</h1>
         <Container style={{ minHeight: '15em', padding: '0em' }}>
           <Form>
@@ -106,7 +106,7 @@ class Chat extends Component {
               ))}
           </ui>
         </Container>
-      </di>
+      </div>
     );
   }
 }
