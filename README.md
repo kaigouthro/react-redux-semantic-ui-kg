@@ -1,6 +1,6 @@
-![Build Status](https://travis-ci.org/kaigouthro/react-redux-semantic-ui.svg?branch=From-The-Bones)
-![Dependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui.svg?branch=From-The-Bones)
-![devDependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui/dev-status.svg?branch=From-The-Bones)
+![Build Status](https://travis-ci.org/kaigouthro/react-redux-semantic-ui.svg?branch=master)
+![Dependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui.svg?branch=master)
+![devDependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui/dev-status.svg?branch=master)
 
 ## React Redux Universal Hot Example With Semantic UI, Feathers API, Express, and much more
 
