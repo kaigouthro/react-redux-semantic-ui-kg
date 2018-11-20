@@ -71,12 +71,12 @@ class Chat extends Component {
               }}
               placeholder="Enter your message"
               value={this.state.message}
-              width="20"
+              minWidth="10em"
               onChange={event => {
                 this.setState({ message: event.target.value });
               }}
             />
-            <Button attached="bottom" primary onClick={this.handleSubmit}>
+            <Button attached="bottom" onClick={this.handleSubmit}>
               Send
             </Button>
           </Form>

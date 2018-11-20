@@ -48,5 +48,3 @@ const routes = [
 ];
 
 export default routes;
-
-// ooooh,  i like this file..gonna make it some siblings for other routes.
