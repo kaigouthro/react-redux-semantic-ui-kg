@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # if you set up your project to pull from GIT, then uncomment the following two lines.
-#git fetch --all
-#git reset --hard origin/master
+git fetch --all
+git reset --hard origin/Master
 
 npm install
 npm run build
