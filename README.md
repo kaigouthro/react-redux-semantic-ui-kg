@@ -1,8 +1,10 @@
-![Build Status](https://travis-ci.org/kaigouthro/react-redux-semantic-ui.svg?branch=Master)
-![Dependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui.svg?)
-![devDependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui/dev-status.svg?)
+![Build Status](https://travis-ci.org/kaigouthro/react-redux-semantic-ui.svg?branch=master-sandbox)
+![Dependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui.svg?branch=master-sandbox)
+![devDependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui/dev-status.svg?branch=master-sandbox)
 
 ## React Redux Universal Hot Example With Semantic UI, Feathers API, Express, and much more
+
+badges for sandbox.
 
 THIS branch only. check main branch for their more experienced edits...
 mine are more like many little iterations, not all of which are complete or perfect.
