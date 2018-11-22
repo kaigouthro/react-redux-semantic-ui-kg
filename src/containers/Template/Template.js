@@ -56,31 +56,10 @@ class Template extends Component {
         </Segment>
         <Segment color="teal" raised>
           <Grid columns={2} stackable>
-            <Grid.Column size="equal">
-              <Message floating compact size="tiny">
+            <Grid.Column width="wide">
+              <Message floating compact size="small">
                 <p>
-                  if you're using VScode, or any kind of halway customized IDE, choose 'Typescript React' as a language.
-                  The colour coding and automatic foratting with 'Prettier' and 'Beautify' and 'ESLINT' work well with
-                  this kit. I also wanted to include a personal touch with my first contribution to any git, ever. (this
-                  page and the modifications to the other files denoting 'template'), so in addition to that, i'm adding
-                  this link to a public Gist on github, a copy of my VScode sync settings, and installed extensions i
-                  put together painstakingly dialed in for this kit.
-                  <a href="https://gist.github.com/kaigouthro/b2c9cafae8a9a480b0802847c8cdba18">. Check it here</a>
-                  {' '}
-                  fork
-                                    it to your own gist and use
-                  {' '}
-                  <a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">
-                    {' '}
-                    Vs settings sync addon.
-                  </a>
-                  {' '}
-                  I tooled it specially for this project. You wll still have to 'yarn add eslint tslint' and maybe one
-                  or two other things to make it more 'you'.. But pretty much this is just my way of contributing to the
-                  package, making it ~that~ mueasier to get going. All the extensions and settings are react exclusive,
-                  not just a general 'anything universal' set-up. It has functionality and readability enhancements, a
-                  lot of theme goodness, the material icons pack, and everything about colorizing and matching things
-                  up, subtle underline pairs, and more. I Highly reccomend
+                  if you're using VScode, or any kind of halway customized IDE, choose 'Typescript React' as a language, just trust me, it's the one that gives you no headaches on this project, and doesn't call out a million errors that aren't there. it' doesn't quite catch some of the things linting will, but it'll get you 99% of the way there when you use autoformattingplugs like "prettier". The colour coding and automatic foratting with 'Prettier' and 'Beautify' and 'ESLINT' work well with it as well. I also wanted to include a personal touch, so if anyone wants, i'll gladly set them upo with my cusotomized VScode settings files and extension list. but as a first suggestion, I Highly reccomend
                   <strong>"Hack" </strong>
                   as a font choice for your editor, but any of these are fantastic:
                   {' '}
@@ -102,8 +81,8 @@ class Template extends Component {
                 </p>
               </Message>
             </Grid.Column>
-            <Grid.Column size="equal">
-              <Image centered medium src={searchtemplateimage} alt="search in  vscode" rounded />
+            <Grid.Column size="thin">
+              <Image centered fluid src={searchtemplateimage} alt="search in  vscode" rounded />
             </Grid.Column>
           </Grid>
           <Container>

@@ -26,7 +26,7 @@ class InfoBar extends Component {
     const styles = require('./InfoBar.scss');
     return (
       <div className={styles.wrapper}>
-        <Message info>
+        <Message>
           <Message.Header>
             This is an info bar
             {' '}

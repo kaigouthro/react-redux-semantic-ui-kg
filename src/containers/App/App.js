@@ -172,11 +172,7 @@ class App extends Component {
         </Navigation>
         <Segment
           vertical
-          inverted
-          style={{
-            fixed: 'bottom',
-            textAlign: 'center',
-          }}
+          style={{ textAlign: 'center' }}
         >
           <p>
             Have questions? Ask for help

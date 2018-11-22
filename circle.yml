@@ -8,10 +8,11 @@ dependencies:
   cache_directories:
     - node_modules
   override:
-    - npm prune && npm install
+    - npm prune && yarn install
 
 test:
   override:
-    - npm run lint
-    - npm test
-    - npm run test-node
+    - yarn lintfix
+    - yarn test
+    - yarn test-node
+    - yarn start
