@@ -3,3 +3,4 @@
 @basicHoverBackground: @gray-dark;
 @activeBackgroundColor: @gray;
 @hoverBackgroundColor: darken(@gray-light, 3%);
+@borderRadius:5

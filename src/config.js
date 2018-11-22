@@ -12,9 +12,9 @@ const environment = {
 module.exports = Object.assign(
   {
     host: process.env.HOST || 'localhost',
-    port: process.env.PORT,
+    port: process.env.PORT || '80',
     apiHost: process.env.APIHOST || 'localhost',
-    apiPort: process.env.APIPORT,
+    apiPort: process.env.APIPORT || '3030',
     app: {
       title: 'React Redux Semantic UI Example',
       description: 'All the modern best practices in one example.',
