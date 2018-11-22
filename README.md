@@ -2,6 +2,8 @@
 ![Dependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui.svg?branch=master)
 ![devDependency Status](https://david-dm.org/kaigouthro/react-redux-semantic-ui/dev-status.svg?branch=master)
 
+intermittently hosted at [ kais.work ](http://www.kais.work)
+
 ## React Redux Universal Hot Example With Semantic UI, Feathers API, Express, and much more
 
 THIS branch only. check main branch for their more experienced edits...
