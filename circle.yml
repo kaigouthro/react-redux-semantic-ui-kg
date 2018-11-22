@@ -29,7 +29,8 @@ jobs:
       - run: yarn install
       - run: yarn build-dlls
       - run: yarn build
-      - run: yarn start
+      - run: yarn lint
+      - run: yarn test
 
       - save_cache:
           paths:
