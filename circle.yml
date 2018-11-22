@@ -30,7 +30,6 @@ jobs:
       - run: yarn build-dlls
       - run: yarn build
       - run: yarn lint
-      - run: yarn test
 
       - save_cache:
           paths:
