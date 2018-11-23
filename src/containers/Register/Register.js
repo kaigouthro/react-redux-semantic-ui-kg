@@ -34,7 +34,7 @@ class Register extends Component {
     this.props.notifSend({
       message: "You'r now registered !",
       kind: 'success',
-      dismissAfter: 2000,
+      dismissAfter: 4000,
     });
   };
 

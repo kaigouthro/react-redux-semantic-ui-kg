@@ -150,7 +150,7 @@ class App extends Component {
       ];
 
     return (
-      <div>
+      <div style={{ marginBottom: '2 em' }}>
         <Navigation className={styles} leftItems={leftItems} rightItems={rightItems} mobileOnly>
           <div>
             <Segment vertical>
@@ -171,6 +171,7 @@ class App extends Component {
           </div>
         </Navigation>
         <Segment
+          fixed="bottom"
           vertical
           style={{ textAlign: 'center' }}
         >

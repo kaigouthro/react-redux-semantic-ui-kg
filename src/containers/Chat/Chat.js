@@ -72,12 +72,13 @@ class Chat extends Component {
               placeholder="Enter your message"
               value={this.state.message}
               minWidth="10em"
+              attached="top"
               onChange={event => {
                 this.setState({ message: event.target.value });
               }}
             />
             <Button attached="bottom" onClick={this.handleSubmit}>
-              Send
+              Must Press to send.
             </Button>
           </Form>
           <ui>
@@ -88,13 +89,12 @@ class Chat extends Component {
                 <ui key={`chat.msg.${msg.id}`}>
                   <Animate
                     play="true"
-                    startStyle={{ transform: 'translateX(60em)', opacity: '0' }}
-                    endStyle={{ transform: 'translateX(0)', opacity: '1' }}
-                    delaySeconds="0.1"
-                    durationSeconds=".5"
+                    startStyle={{ transform: 'translateX(60em)', opacity: '0', easetype: 'easeOutBounce' }}
+                    endStyle={{ opacity: '1' }}
+                    durationSeconds=".7"
                   >
-                    <Label Icon name="chat" color="blue" startStyle={{ margin: '5px' }}>
-                      <Icon name="chat" />
+                    <Label Icon name="chat" color="blue">
+                      <Icon name="chat" size="small" />
                       {msg.from}
                     </Label>
                     <Label basic color="teal" pointing="left">

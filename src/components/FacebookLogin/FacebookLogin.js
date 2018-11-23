@@ -23,7 +23,7 @@ class FacebookLogin extends Component {
     scope: 'public_profile,email',
     xfbml: false,
     cookie: false,
-    version: '2.3',
+    version: '3.2',
     language: 'en_US',
     autoLoad: false,
   };

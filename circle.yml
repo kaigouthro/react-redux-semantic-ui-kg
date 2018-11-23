@@ -8,7 +8,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:10.5.0
-   
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -23,6 +23,6 @@ jobs:
       - run: yarn build-dlls
       - run: yarn build
       - run: yarn lint
-        
+
       # run tests!
       - run: yarn test

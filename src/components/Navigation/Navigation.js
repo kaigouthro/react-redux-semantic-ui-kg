@@ -10,8 +10,8 @@ import {
 } from 'semantic-ui-react';
 
 const NavBarMobile = props => (
-  <Sidebar.Pushable>
-    <Sidebar as={Menu} animation="overlay" inverted visible={props.visible} style={{ height: '100vmax' }}>
+  <Sidebar.Pushable style={{ minheight: '95vh' }}>
+    <Sidebar as={Menu} animation="push" inverted visible={props.visible} style={{ minHeight: '95vh' }}>
       <Icon className={props.styles.closeIt} name="close" size="large" onClick={props.onToggle} />
       <Menu vertical inverted fluid>
         <Menu.Item>
@@ -24,14 +24,14 @@ const NavBarMobile = props => (
         ))}
       </Menu>
     </Sidebar>
-    <Sidebar.Pusher dimmed={props.visible} onClick={props.onPusherClick} style={{ minHeight: '100vh' }}>
+    <Sidebar.Pusher dimmed={props.visible} onClick={props.onPusherClick} style={{ minHeight: '95vh' }}>
       <Responsive minWidth={769}>
         <NavBarDesktop leftItems={props.leftItems} rightItems={props.rightItems} />
       </Responsive>
       <Responsive maxWidth={768}>
         <Menu fixed="top" inverted>
           <Menu.Item onClick={props.onToggle}>
-            <Icon name="sidebar" />
+            <Icon name="sidebar" size="big" />
           </Menu.Item>
           <Menu.Item>
             <Image as={Link} to="/" size="mini" src="https://react.semantic-ui.com/logo.png" />

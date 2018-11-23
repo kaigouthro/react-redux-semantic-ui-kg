@@ -54,7 +54,7 @@ class Login extends Component {
     this.props.notifSend({
       message: "You're logged !",
       kind: 'success',
-      dismissAfter: 2000,
+      dismissAfter: 4000,
     });
   };
 
