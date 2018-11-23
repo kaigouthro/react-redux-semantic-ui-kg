@@ -6,8 +6,9 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/kaigouthro/react-redux-semantic-ui.svg)](https://greenkeeper.io/)
 [![CircleCI](https://circleci.com/gh/kaigouthro/react-redux-semantic-ui/tree/master.svg?style=svg)](https://circleci.com/gh/kaigouthro/react-redux-semantic-ui/tree/master)
 
+> Graciously, and [ Officially deploying to Heroku](https://react-redux-semantic-hotplate.herokuapp.com/templatek) for master build, check it out there. 
 
-> Intermittently hosted at [ kais.work ](http://www.kais.work)
+-----
 
 ## React Redux Universal Hot Example With Semantic UI, Feathers API, Express, and much more
 
