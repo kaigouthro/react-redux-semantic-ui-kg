@@ -36,11 +36,11 @@ cache:
     - node_modules
 
 script:
-  - yarn run test-node
-  - yarn run lint
-  - yarn run test
+  - yarn lintfix
+  - yarn test-node
+  - yarn lint
+  - yarn test
 
 env:
   - TRAVIS=travis CXX=g++-4.8
   - CODECOV_TOKEN="7e856f59-b664-42e5-b347-7c42b6fc411e"
-
