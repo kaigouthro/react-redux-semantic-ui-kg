@@ -5,7 +5,7 @@ import {
   Button, Form, Container, Icon, Label
 } from 'semantic-ui-react';
 import { Animate } from 'react-simple-animate';
-import { socket } from '../app';
+import { socket } from 'app';
 
 @connect(state => ({ user: state.auth.user }))
 class Chat extends Component {
