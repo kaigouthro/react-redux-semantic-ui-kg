@@ -4,6 +4,7 @@ import config from 'config';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { Container, Header, Segment } from 'semantic-ui-react';
+import config from '../../config';
 
 @connect(state => ({
   online: state.online,
@@ -16,11 +17,14 @@ class Home extends Component {
     return (
       <div className={styles.home}>
         <Helmet title="Home" />
-        <Segment textAlign="center" vertical>
+        <Segment textAlign="center" raised>
           <Container text>
             <div className={styles.logo}>
               <img src={logoImage} alt="presentation" />
-              <img src="https://react.semantic-ui.com/logo.png" alt="semantic-ui-react" />
+              <img
+                src="https://react.semantic-ui.com/logo.png"
+                alt="semantic-ui-react"
+              />
             </div>
             <Header as="h1" content={config.app.title} />
             <Header as="h2" content={config.app.description} />

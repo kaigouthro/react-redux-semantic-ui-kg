@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+
 import { Button, Link, Segment } from 'semantic-ui-react';
 import MiniInfoBar from '../../components/MiniInfoBar/MiniInfoBar';
 
 class About extends Component {
+
   state = {
     showKitten: false,
   };
@@ -46,10 +48,12 @@ class About extends Component {
           </p>
 
           {showKitten && (
+
             <div>
               <img src={kitten} alt="kitchen" />
             </div>
           )}
+
         </Segment>
         <Segment raised>
           <p>This starter boilerplate app uses the following technologies:</p>
@@ -189,7 +193,8 @@ class About extends Component {
               for real-time communication
             </li>
           </ul>
-
+        </Segment>
+        <Segment raised>
           <h3>Features demonstrated in this project</h3>
 
           <dl>
@@ -332,4 +337,5 @@ class About extends Component {
     );
   }
 }
+
 export default About;
