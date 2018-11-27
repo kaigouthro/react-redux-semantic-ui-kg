@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-
 import { Button, Link, Segment } from 'semantic-ui-react';
+import connect from 'react-redux';
 import MiniInfoBar from '../../components/MiniInfoBar/MiniInfoBar';
 
 @connect(state => ({ user: state.auth.user }))
-
 class About extends Component {
-
   state = {
     showKitten: false,
   };
@@ -50,47 +48,69 @@ class About extends Component {
           </p>
 
           {showKitten && (
-
             <div>
               <img src={kitten} alt="kitchen" />
             </div>
           )}
-
         </Segment>
         <Segment raised>
           <p>This starter boilerplate app uses the following technologies:</p>
 
           <ul>
             <li>
-              <a href="https://medium.com/@mjackson/universal-javascript-4761051b7ae9">Universal</a>
+              <a href="https://medium.com/@mjackson/universal-javascript-4761051b7ae9">
+                Universal
+              </a>
               {' '}
               rendering
             </li>
-            <li>Both client and server make calls to load data from separate API server</li>
             <li>
-              <a href="https://github.com/facebook/react" target="_blank" rel="noopener noreferrer">
+              Both client and server make calls to load data from separate API server
+            </li>
+            <li>
+              <a
+                href="https://github.com/facebook/react"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 React
               </a>
             </li>
             <li>
-              <a href="https://github.com/rackt/react-router" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/rackt/react-router"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 React Router
               </a>
             </li>
             <li>
-              <a href="http://expressjs.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://expressjs.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Express
               </a>
             </li>
             <li>
-              <a href="http://babeljs.io" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://babeljs.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Babel
               </a>
               {' '}
               for ES6 and ES7 magic
             </li>
             <li>
-              <a href="http://webpack.github.io" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://webpack.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Webpack
               </a>
               {' '}
@@ -106,12 +126,20 @@ class About extends Component {
               </a>
             </li>
             <li>
-              <a href="https://github.com/glenjamin/webpack-hot-middleware" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/glenjamin/webpack-hot-middleware"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Webpack Hot Middleware
               </a>
             </li>
             <li>
-              <a href="https://github.com/rackt/redux" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/rackt/redux"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Redux
               </a>
               's futuristic
@@ -127,65 +155,111 @@ class About extends Component {
               implementation
             </li>
             <li>
-              <a href="https://github.com/gaearon/redux-devtools" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/gaearon/redux-devtools"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Redux Dev Tools
               </a>
               {' '}
               for next generation DX (developer experience). Watch
               {' '}
-              <a href="https://www.youtube.com/watch?v=xsSnOQynTHs" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.youtube.com/watch?v=xsSnOQynTHs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Dan Abramov's talk
               </a>
               .
             </li>
             <li>
-              <a href="https://github.com/rackt/redux-router" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/rackt/redux-router"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Redux Router
               </a>
               {' '}
               Keep your router state in your Redux store
             </li>
             <li>
-              <a href="http://eslint.org" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://eslint.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 ESLint
               </a>
               {' '}
               to maintain a consistent code style
             </li>
             <li>
-              <a href="https://github.com/erikras/redux-form" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/erikras/redux-form"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 redux-form
               </a>
               {' '}
               to manage form state in Redux
             </li>
             <li>
-              <a href="https://github.com/erikras/multireducer" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/erikras/multireducer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 multireducer
               </a>
               {' '}
               combine several identical reducer states into one key-based reducer
             </li>
             <li>
-              <a href="https://github.com/webpack/style-loader" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/webpack/style-loader"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 style-loader
               </a>
               {' '}
               and
               {' '}
-              <a href="https://github.com/jtangelder/sass-loader" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/jtangelder/sass-loader"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 sass-loader
               </a>
               {' '}
               to allow import of stylesheets
             </li>
+            import
+            {' '}
+            {connect}
+            {' '}
+            from "react-redux";
+
             <li>
-              <a href="https://github.com/Semantic-Org/Semantic-UI-React" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/Semantic-Org/Semantic-UI-React"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Semantic-UI-React
               </a>
             </li>
             <li>
-              <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/FortAwesome/Font-Awesome"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 font-awesome
               </a>
             </li>
@@ -195,8 +269,7 @@ class About extends Component {
               for real-time communication
             </li>
           </ul>
-        </Segment>
-        <Segment raised>
+
           <h3>Features demonstrated in this project</h3>
 
           <dl>
@@ -211,7 +284,7 @@ class About extends Component {
               <code>InfoBar</code>
               {' '}
               component that fetches
-                            data from the server initially, but allows for the user to refresh the data from the client.
+              data from the server initially, but allows for the user to refresh the data from the client.
               {' '}
               <code>About.js</code>
               {' '}
@@ -227,14 +300,14 @@ class About extends Component {
               <Link to="/widgets">Widgets page</Link>
               {' '}
               demonstrates how to fetch data asynchronously from some source
-                            that is needed to complete the server-side rendering.
+              that is needed to complete the server-side rendering.
               {' '}
               <code>Widgets.js</code>
               's
               <code>provideHooks()</code>
               {' '}
               function is called before the widgets page is loaded, on either the server or
-                            the client, allowing all the widget data to be loaded and ready for the page to render.
+              the client, allowing all the widget data to be loaded and ready for the page to render.
             </dd>
             <dt>Data loading errors</dt>
             <dd>
@@ -243,10 +316,10 @@ class About extends Component {
               <Link to="/widgets">Widgets page</Link>
               {' '}
               also demonstrates how to deal with data loading errors in
-                            Redux.
-                            The API endpoint that delivers the widget data intentionally fails 33% of the time
-                            , to highlight
-                            this. The
+              Redux.
+              The API endpoint that delivers the widget data intentionally fails 33% of the time
+              , to highlight
+              this. The
               {' '}
               <code>clientMiddleware</code>
               {' '}
@@ -255,7 +328,7 @@ class About extends Component {
               <code>widgets</code>
               {' '}
               reducer picks
-                            up and saves to the Redux state for presenting to the user.
+              up and saves to the Redux state for presenting to the user.
             </dd>
             <dt>Session based login</dt>
             <dd>
@@ -264,7 +337,7 @@ class About extends Component {
               <Link to="/login">Login page</Link>
               {' '}
               you can submit a username which will be sent to the server and
-                            stored in the session. Subsequent refreshes will show that you are still logged in.
+              stored in the session. Subsequent refreshes will show that you are still logged in.
             </dd>
             <dt>Redirect after state change</dt>
             <dd>
@@ -273,7 +346,7 @@ class About extends Component {
               <strike>magic</strike>
               {' '}
               logic is
-                            performed in
+              performed in
               {' '}
               <code>componentWillReceiveProps()</code>
               {' '}
@@ -281,11 +354,11 @@ class About extends Component {
               {' '}
               <code>App.js</code>
               , but it could be done in any
-                            component that listens to the appropriate store slice, via Redux's
+              component that listens to the appropriate store slice, via Redux's
               {' '}
               <code>@connect</code>
               , and pulls the
-                            router from the context.
+              router from the context.
             </dd>
             <dt>Auth-required views</dt>
             <dd>
@@ -294,7 +367,7 @@ class About extends Component {
               <Link to="/login-success">go there</Link>
               {' '}
               when you are not logged in, you will be forwarded back to this
-                            home page. This
+              home page. This
               <strike>magic</strike>
               {' '}
               logic is performed by the
@@ -312,7 +385,11 @@ class About extends Component {
               {' '}
               uses the still-experimental
               {' '}
-              <a href="https://github.com/erikras/redux-form" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/erikras/redux-form"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 redux-form
               </a>
               {' '}
@@ -325,7 +402,7 @@ class About extends Component {
               <Link to="/chat">Chat</Link>
               {' '}
               uses the socket.io technology for real-time communication between
-                            clients.
+              clients.
             </dd>
           </dl>
 
@@ -339,5 +416,4 @@ class About extends Component {
     );
   }
 }
-
 export default About;
