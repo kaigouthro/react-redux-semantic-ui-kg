@@ -76,7 +76,7 @@ class Login extends Component {
               session of the API server.
             </p>
             <FacebookLogin
-              appId="635147529978862"
+              appId="576543892775849"
               /* autoLoad={true} */
               fields="name,email,picture"
               onLogin={this.onFacebookLogin}
