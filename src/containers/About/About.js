@@ -3,6 +3,8 @@ import Helmet from 'react-helmet';
 import { Button, Link, Segment } from 'semantic-ui-react';
 import MiniInfoBar from '../../components/MiniInfoBar/MiniInfoBar';
 
+@connect(state => ({ user: state.auth.user }))
+
 class About extends Component {
   state = {
     showKitten: false,
