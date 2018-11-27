@@ -1,4 +1,3 @@
-import { socket } from 'app';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
@@ -6,6 +5,7 @@ import {
   Button, Form, Container, Icon, Label
 } from 'semantic-ui-react';
 import { Animate } from 'react-simple-animate';
+import { socket } from '../app';
 
 @connect(state => ({ user: state.auth.user }))
 class Chat extends Component {
