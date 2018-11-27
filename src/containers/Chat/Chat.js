@@ -82,28 +82,29 @@ class Chat extends Component {
             </Button>
           </Form>
           <ui>
-            {this.state.messages
-              .slice(0)
-              .reverse()
-              .map(msg => (
-                <ui key={`chat.msg.${msg.id}`}>
-                  <Animate
-                    play="true"
-                    startStyle={{ transform: 'translateX(60em)', opacity: '0', easetype: 'easeOutBounce' }}
-                    endStyle={{ opacity: '1' }}
-                    durationSeconds=".7"
-                  >
-                    <Label Icon name="chat" color="blue">
-                      <Icon name="chat" size="small" />
-                      {msg.from}
-                    </Label>
-                    <Label basic color="teal" pointing="left">
-                      {' '}
-                      {msg.text}
-                    </Label>
-                  </Animate>
-                </ui>
-              ))}
+            {this.state.messages.slice(0).reverse().map(msg => (
+              <ui key={`chat.msg.${msg.id}`}>
+                <Animate
+                  play="true"
+                  startStyle={{
+                    transform: 'translateX(60em)',
+                    opacity: '0',
+                    easetype: 'easeOutBounce',
+                  }}
+                  endStyle={{ opacity: '1' }}
+                  durationSeconds=".7"
+                >
+                  <Label Icon name="chat" color="blue">
+                    <Icon name="chat" size="small" />
+                    {msg.from}
+                  </Label>
+                  <Label basic color="teal" pointing="left">
+                    {' '}
+                    {msg.text}
+                  </Label>
+                </Animate>
+              </ui>
+            ))}
           </ui>
         </Container>
       </div>

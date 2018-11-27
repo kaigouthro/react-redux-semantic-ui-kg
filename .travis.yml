@@ -36,10 +36,12 @@ cache:
     - node_modules
 
 script:
+
   - npm run lintfix
   - npm run test-node
   - npm run lint
   - npm run build
+
 
 env:
   - TRAVIS=travis CXX=g++-4.8
