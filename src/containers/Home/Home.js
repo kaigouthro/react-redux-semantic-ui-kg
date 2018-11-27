@@ -4,7 +4,6 @@ import config from 'config';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { Container, Header, Segment } from 'semantic-ui-react';
-import config from '../../config';
 
 @connect(state => ({
   online: state.online,
