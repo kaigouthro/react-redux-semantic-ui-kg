@@ -20,6 +20,8 @@ before_install:
   - sudo apt-get -qq update
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH="$HOME/.yarn/bin:$PATH"
+  - sudo apt-get install jq
+  - wget -O ~/codacy-coverage-reporter-assembly-latest.jar $(curl https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest | jq -r '.assets[0].browser_download_url')  
 
 install:
   - yarn install
@@ -43,6 +45,10 @@ script:
   - npm run build
 
 
+after_success:
+  - java -jar ~/codacy-coverage-reporter-assembly-latest.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml
+
 env:
   - TRAVIS=travis CXX=g++-4.8
   - CODECOV_TOKEN="7e856f59-b664-42e5-b347-7c42b6fc411e"
+  - CODACY_PROJECT_TOKEN=faa679a0d5ad4ad08890a3184523ad66
