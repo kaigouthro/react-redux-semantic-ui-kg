@@ -6,7 +6,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/kaigouthro/react-redux-semantic-ui.svg)](https://greenkeeper.io/)
 [![CircleCI](https://circleci.com/gh/kaigouthro/react-redux-semantic-ui/tree/master.svg?style=svg)](https://circleci.com/gh/kaigouthro/react-redux-semantic-ui/tree/master)
 
-> Graciously, and [ Officially deploying to Heroku](https://react-redux-semantic-hotplate.herokuapp.com/templatek) for master build, check it out there. 
+> Graciously, and [ Officially deploying to Heroku](https://react-redux-semantic-hotplate.herokuapp.com/) for master build, check it out there. 
 
 -----
 
