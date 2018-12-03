@@ -13,6 +13,7 @@ import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import {
   Container, Divider, Message, Segment
 } from 'semantic-ui-react';
+import './layout.less';
 
 import Navigation from '../../components/Navigation/Navigation';
 
@@ -150,13 +151,13 @@ class App extends Component {
       ];
 
     return (
-      <div style={{ marginBottom: '2 em' }}>
-        <Navigation className={styles} leftItems={leftItems} rightItems={rightItems} mobileOnly>
-          <div>
+      <div id="container">
+        <Navigation leftItems={leftItems} rightItems={rightItems} mobileOnly>
+          <Helmet {...config.app.head} />
+          <div id="body">
+            <Divider hidden />
             <Segment vertical>
-              <Divider hidden />
               <Container>
-                <Helmet as="h1" {...config.app.head} />
                 {notifs.global && (
                   <Notifs
                     className={styles.notifs}
@@ -169,25 +170,23 @@ class App extends Component {
               </Container>
             </Segment>
           </div>
+          <div id="footer">
+            <Segment vertical style={{ textAlign: 'center' }}>
+              <p>
+                Have questions? Ask for help
+                {' '}
+                <a
+                  href="https://github.com/dongcai/react-redux-semantic-ui/issues"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  on Github.
+                </a>
+                  .
+              </p>
+            </Segment>
+          </div>
         </Navigation>
-        <Segment
-          fixed="bottom"
-          vertical
-          style={{ textAlign: 'center' }}
-        >
-          <p>
-            Have questions? Ask for help
-            {' '}
-            <a
-              href="https://github.com/dongcai/react-redux-semantic-ui/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              on Github.
-            </a>
-            .
-          </p>
-        </Segment>
       </div>
     );
   }

@@ -19,8 +19,8 @@
 @fontName: "Roboto";
 @emSize: 12.25px;
 @linkColor: @positiveColor;
-@linkHoverColor: darken(@linkColor, 10%);
-@headerFontWeight: 400;
+@linkHoverColor: darken(@linkColor, 20%);
+@headerFontWeight: 500;
 @inputColor: @textColor;
 @disabledBorderColor: @gray-light;
 @mutedTextColor: @gray;

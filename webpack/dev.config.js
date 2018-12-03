@@ -37,7 +37,7 @@ var babelLoaderQuery = Object.assign({}, babelrcObject, babelrcObjectDevelopment
 delete babelLoaderQuery.env;
 
 babelLoaderQuery.presets = babelLoaderQuery.presets.map(function (v) {
-  return v === 'es2015' ? ['es2015', { modules: false }] : v;
+  return v === 'env' ? ['env', { modules: false }] : v;
 });
 
 var validDLLs = helpers.isValidDLLs('vendor', assetsPath);

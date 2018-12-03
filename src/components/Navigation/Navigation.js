@@ -3,38 +3,75 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
-import Headroom from 'react-headroom';
-
 import {
-  Icon, Image, Menu, Sidebar, Responsive
+  Icon,
+  Image,
+  Menu,
+  Sidebar,
+  Responsive,
+  Divider,
 } from 'semantic-ui-react';
 
 const NavBarMobile = props => (
-  <Sidebar.Pushable style={{ minheight: '95vh' }}>
-    <Sidebar as={Menu} animation="push" inverted visible={props.visible} style={{ minHeight: '95vh' }}>
-      <Icon className={props.styles.closeIt} name="close" size="large" onClick={props.onToggle} />
-      <Menu vertical inverted fluid>
+  <Sidebar.Pushable style={{ minheight: '100vh' }}>
+    <Sidebar
+      as={Menu}
+      animation="overlay"
+      visible={props.visible}
+      style={{ minHeight: '100vh' }}
+    >
+      <Icon
+        className={props.styles.closeIt}
+        name="close"
+        size="large"
+        onClick={props.onToggle}
+      />
+
+      <Menu vertical inverted seecondary fluid>
         <Menu.Item>
-          <Image as={Link} to="/" size="mini" src="https://react.semantic-ui.com/logo.png" onClick={props.onToggle} />
+          <Image
+            as={Link}
+            to="/"
+            size="mini"
+            src="https://react.semantic-ui.com/logo.png"
+            onClick={props.onToggle}
+          />
         </Menu.Item>
         {_.map(props.leftItems, item => (
-          <Menu.Item as={Link} to={item.to} key={item.key} onClick={props.onToggle}>
+          <Menu.Item
+            as={Link}
+            to={item.to}
+            key={item.key}
+            onClick={props.onToggle}
+          >
             {item.content}
           </Menu.Item>
         ))}
       </Menu>
     </Sidebar>
-    <Sidebar.Pusher dimmed={props.visible} onClick={props.onPusherClick} style={{ minHeight: '95vh' }}>
+    <Sidebar.Pusher
+      dimmed={props.visible}
+      onClick={props.onPusherClick}
+      style={{ minHeight: '100vh' }}
+    >
       <Responsive minWidth={769}>
-        <NavBarDesktop leftItems={props.leftItems} rightItems={props.rightItems} />
+        <NavBarDesktop
+          leftItems={props.leftItems}
+          rightItems={props.rightItems}
+        />
       </Responsive>
       <Responsive maxWidth={768}>
-        <Menu fixed="top" inverted>
+        <Menu fixed="top" inverted secondary>
           <Menu.Item onClick={props.onToggle}>
-            <Icon name="sidebar" size="big" />
+            <Icon name="sidebar" size="large" />
           </Menu.Item>
           <Menu.Item>
-            <Image as={Link} to="/" size="mini" src="https://react.semantic-ui.com/logo.png" />
+            <Image
+              as={Link}
+              to="/"
+              size="mini"
+              src="https://react.semantic-ui.com/logo.png"
+            />
           </Menu.Item>
           <Menu.Menu position="right">
             {_.map(props.rightItems, item => (
@@ -44,6 +81,7 @@ const NavBarMobile = props => (
             ))}
           </Menu.Menu>
         </Menu>
+        <Divider />
       </Responsive>
       {props.children}
     </Sidebar.Pusher>
@@ -68,9 +106,14 @@ NavBarMobile.defaultProps = {
 };
 
 const NavBarDesktop = ({ leftItems, rightItems }) => (
-  <Menu inverted>
+  <Menu secondary inverted>
     <Menu.Item>
-      <Image as={Link} to="/" size="mini" src="https://react.semantic-ui.com/logo.png" />
+      <Image
+        as={Link}
+        to="/"
+        size="mini"
+        src="https://react.semantic-ui.com/logo.png"
+      />
     </Menu.Item>
     {_.map(leftItems, item => (
       <Menu.Item as={Link} to={item.to} key={item.key}>
@@ -97,9 +140,17 @@ NavBarDesktop.defaultProps = {
   rightItems: [],
 };
 
-const NavBarChildren = ({ children }) => <div style={{ margin: '2em 0em' }}>{children}</div>;
+const NavBarChildren = ({ children }) => (
+  <div style={{ margin: '3.5em 0em' }}>{children}</div>
+);
+const NavBarChildrenD = ({ children }) => (
+  <div style={{ margin: '0em 0em' }}>{children}</div>
+);
 
 NavBarChildren.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+NavBarChildrenD.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
@@ -131,7 +182,7 @@ export default class Navigation extends Component {
   // ref: https://reactjs.org/docs/react-component.html#setstate
 
   handleToggle = () => {
-    this.setState(state => ({ visible: !state.visible }));
+    this.setState(state => ({ visible: !state.visible, 'z-index': '-1' }));
   };
 
   render() {
@@ -143,20 +194,8 @@ export default class Navigation extends Component {
 
     return (
       <div style={{ minHeight: '100vh' }}>
-        {mobileOnly && (
-          <NavBarMobile
-            leftItems={leftItems}
-            onPusherClick={this.handlePusher}
-            onToggle={this.handleToggle}
-            rightItems={rightItems}
-            visible={visible}
-            styles={styles}
-          >
-            <NavBarChildren>{children}</NavBarChildren>
-          </NavBarMobile>
-        )}
-        {!mobileOnly && (
-          <Responsive {...Responsive.onlyMobile}>
+        {mobileOnly
+          && (
             <NavBarMobile
               leftItems={leftItems}
               onPusherClick={this.handlePusher}
@@ -164,21 +203,38 @@ export default class Navigation extends Component {
               rightItems={rightItems}
               visible={visible}
               styles={styles}
-            />
-            <NavBarChildren>{children}</NavBarChildren>
-          </Responsive>
-        )}
-        {!mobileOnly && (
-          <Responsive maxWidth={Responsive.tabletOnly.maxwidth}>
-            <div>
-              <Headroom>
+            >
+              <Responsive maxWidth={768}>
+                <NavBarChildren>{children}</NavBarChildren>
+              </Responsive>
+              <Responsive minWidth={769}>
+                <NavBarChildrenD>{children}</NavBarChildrenD>
+              </Responsive>
+            </NavBarMobile>
+          )}
+        {!mobileOnly
+          && (
+            <Responsive {...Responsive.onlyMobile}>
+              <NavBarMobile
+                leftItems={leftItems}
+                onPusherClick={this.handlePusher}
+                onToggle={this.handleToggle}
+                rightItems={rightItems}
+                visible={visible}
+                styles={styles}
+              />
+              <NavBarChildrenD>{children}</NavBarChildrenD>
+            </Responsive>
+          )}
+        {!mobileOnly
+          && (
+            <Responsive maxWidth={Responsive.tabletOnly.maxwidth}>
+              <div>
                 <NavBarDesktop leftItems={leftItems} rightItems={rightItems} />
-              </Headroom>
-              <NavBarChildren>{children}</NavBarChildren>
-            </div>
-          </Responsive>
-
-        )}
+                <NavBarChildrenD>{children}</NavBarChildrenD>
+              </div>
+            </Responsive>
+          )}
       </div>
     );
   }

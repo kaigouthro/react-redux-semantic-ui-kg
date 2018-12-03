@@ -6,7 +6,10 @@
       "env",
       {
         "targets": {
-          "browsers": ["last 2 versions", "IE >= 8"],
+          "browsers": [
+            "last 2 versions",
+            "IE >= 8"
+          ],
           "node": "current"
         },
         "useBuiltIns": "entry"

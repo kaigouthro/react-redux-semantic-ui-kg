@@ -89,7 +89,7 @@ class Chat extends Component {
                   startStyle={{
                     transform: 'translateX(60em)',
                     opacity: '0',
-                    easetype: 'easeOutBounce',
+                    easeType: 'easeOutBounce',
                   }}
                   endStyle={{ opacity: '1' }}
                   durationSeconds=".7"
