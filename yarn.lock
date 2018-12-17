@@ -90,6 +90,14 @@
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@feathers-plus/batch-loader/-/batch-loader-0.3.3.tgz#ccfacc3d3fe4c67dcb9679274bb3211afd1fbe41"
 
+"@feathersjs/adapter-commons@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@feathersjs/adapter-commons/-/adapter-commons-1.0.2.tgz#6874125efae2d8ed422389b718cd362afe2ab6f5"
+  integrity sha512-nee7PEE/mEx/iofcTALvMO7gj6SC6gzKdH3xorwHMKQi9z82aI3PLvgTgC3+4B0UwCSZ1gthSUJIl8K093P4Ug==
+  dependencies:
+    "@feathersjs/commons" "^4.0.0"
+    "@feathersjs/errors" "^3.3.5"
+
 "@feathersjs/authentication-client@^1.0.1":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@feathersjs/authentication-client/-/authentication-client-1.0.8.tgz#c39dd768023e0d469b55cc33549d1708d20e14f6"
@@ -156,7 +164,7 @@
     passport "^0.4.0"
     uuid "^3.1.0"
 
-"@feathersjs/commons@^1.3.0", "@feathersjs/commons@^1.4.0":
+"@feathersjs/commons@^1.4.0":
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-1.4.4.tgz#cd8c0a4dfc7ba1027d359ae80542381241564728"
 
@@ -164,9 +172,21 @@
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-3.0.1.tgz#cf844b91ba5fe3ec419384d986d85929067a3058"
 
-"@feathersjs/errors@^3.0.0", "@feathersjs/errors@^3.2.0", "@feathersjs/errors@^3.3.0", "@feathersjs/errors@^3.3.4":
+"@feathersjs/commons@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-4.0.0.tgz#ae49bae4025c35aaeb9aacb6a0c27a3d1def5062"
+  integrity sha512-hyCLse4RiNt7WLPQ0KSudjoVnwiRykhYzIZdtDon9i2usPaoYkFw/fEYZrkE5HVB+sUTwphZoZ1oOntRk1MShg==
+
+"@feathersjs/errors@^3.0.0", "@feathersjs/errors@^3.3.0", "@feathersjs/errors@^3.3.4":
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.4.tgz#7dd591626ba57d1e8074464235b4d23906833ca7"
+  dependencies:
+    debug "^4.0.0"
+
+"@feathersjs/errors@^3.3.5":
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.5.tgz#e6edef65669a0663b948ddb2d84ec48d60acd542"
+  integrity sha512-Nc4SxKJ7xQk5RZ3M68/Oj5c2uB/VrUATd4dLEdSGHf9j+qvajZVmBPjqDPYfY4IeTnYNhvwTmuyCulD0bCL4ZQ==
   dependencies:
     debug "^4.0.0"
 
@@ -4190,14 +4210,14 @@ feathers-hooks-common@^4.10.0:
     process "0.11.10"
     traverse "^0.6.6"
 
-feathers-nedb@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/feathers-nedb/-/feathers-nedb-3.1.0.tgz#05acd0bab27e5d395dec435d54cdc1b0c0bf5924"
+feathers-nedb@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/feathers-nedb/-/feathers-nedb-4.0.0.tgz#1152a7fbc2a33a1bcd68dbe0f2eed4ff6bd9acee"
+  integrity sha512-LVzpEmn21FA0kYY0DhzLjzqJAFhV+A3sDR0wyXRpllTQc2+Fq2MYLLgXVzNchD0vui9isdYdo/rmzdPjpdtFaQ==
   dependencies:
-    "@feathersjs/commons" "^1.3.0"
-    "@feathersjs/errors" "^3.2.0"
-    lodash.omit "^4.3.0"
-    uberproto "^2.0.0"
+    "@feathersjs/adapter-commons" "^1.0.2"
+    "@feathersjs/commons" "^4.0.0"
+    "@feathersjs/errors" "^3.3.4"
 
 figgy-pudding@^3.0.0, figgy-pudding@^3.1.0, figgy-pudding@^3.4.1, figgy-pudding@^3.5.1:
   version "3.5.1"
@@ -6697,7 +6717,7 @@ lodash.mergewith@^4.6.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
 
-lodash.omit@^4.3.0, lodash.omit@^4.5.0:
+lodash.omit@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
 
