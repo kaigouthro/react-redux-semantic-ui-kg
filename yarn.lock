@@ -124,11 +124,12 @@
     lodash.pick "^4.4.0"
     passport-jwt "^4.0.0"
 
-"@feathersjs/authentication-local@^1.0.2":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-local/-/authentication-local-1.2.7.tgz#3dc112fd05d0994073a252ebbdf3fb8d7358612b"
+"@feathersjs/authentication-local@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-local/-/authentication-local-1.2.8.tgz#3fe23faeb6be68082dcd1e1fc26983c15533736f"
+  integrity sha512-2UhCDd8Xge4WrxOrNef5nIDcqVSdMn4YI0Ft3zFHkOw7W+Oyf2BGN3II886Bam9QwyayBPL4NFHhjaY5c37AiA==
   dependencies:
-    "@feathersjs/errors" "^3.3.4"
+    "@feathersjs/errors" "^3.3.5"
     bcryptjs "^2.3.0"
     debug "^4.0.0"
     lodash "^4.17.5"
