@@ -114,11 +114,12 @@
     debug "^4.0.0"
     jwt-decode "^2.1.0"
 
-"@feathersjs/authentication-jwt@^2.0.0":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-jwt/-/authentication-jwt-2.0.7.tgz#54cc2d263f24a27acf4244e0a7087d98f3be2109"
+"@feathersjs/authentication-jwt@^2.0.8":
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-jwt/-/authentication-jwt-2.0.8.tgz#5ac80df9cb344b303aecace302f34f4bcd6dbe92"
+  integrity sha512-2qtnNjZnf7cJrEyS3lgGgvTASg3zdBMb5LDceFxLZccA+Wo1YseIq8BZWdF6Y1R8s1u6cSAmbucP5S91yGrUaQ==
   dependencies:
-    "@feathersjs/errors" "^3.3.4"
+    "@feathersjs/errors" "^3.3.5"
     debug "^4.0.0"
     lodash.merge "^4.6.0"
     lodash.omit "^4.5.0"
