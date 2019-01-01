@@ -4223,9 +4223,10 @@ feathers-authentication-hooks@^0.3.0:
     debug "^3.1.0"
     lodash "^4.17.5"
 
-feathers-hooks-common@^4.10.0:
-  version "4.19.0"
-  resolved "https://registry.yarnpkg.com/feathers-hooks-common/-/feathers-hooks-common-4.19.0.tgz#c975fa5028e4916ff6a0eb2a6849c660b5365526"
+feathers-hooks-common@^4.19.6:
+  version "4.19.6"
+  resolved "https://registry.yarnpkg.com/feathers-hooks-common/-/feathers-hooks-common-4.19.6.tgz#d640c66c70184c9906579be563dd32f5fe5e265d"
+  integrity sha512-lVfVcFei4osAWQ9fDoPEK3Jh4KaGl42k+u/eJKqgcgXzRMBcAHrLzdPQvxTPD6KfsSFCgF3lBE1PddcXXe5bJA==
   dependencies:
     "@feathers-plus/batch-loader" "^0.3.0"
     "@feathersjs/commons" "^1.4.0"
@@ -4233,6 +4234,7 @@ feathers-hooks-common@^4.10.0:
     "@feathersjs/feathers" "^3.1.3"
     ajv "^5.5.2"
     debug "^3.1.0"
+    libphonenumber-js "^1.6.8"
     process "0.11.10"
     traverse "^0.6.6"
 
@@ -6357,6 +6359,15 @@ libnpx@^10.2.0:
     which "^1.3.0"
     y18n "^4.0.0"
     yargs "^11.0.0"
+
+libphonenumber-js@^1.6.8:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.7.0.tgz#812459db59b4946abc07a8dd91ee0ed804d478d9"
+  integrity sha512-NWeVWafWV9vv6NRLCY4Jv1k1CvgXWKgwRwDm5yTw7DYd4KBYl7ScJGWB36DjawCMYdU8FdPIp1uZycYhOJSXuQ==
+  dependencies:
+    minimist "^1.2.0"
+    semver-compare "^1.0.0"
+    xml2js "^0.4.17"
 
 lie@3.1.1:
   version "3.1.1"
@@ -10039,7 +10050,7 @@ sass-loader@^7.0.3:
     pify "^3.0.0"
     semver "^5.5.0"
 
-sax@^1.1.4, sax@^1.2.4:
+sax@>=0.6.0, sax@^1.1.4, sax@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
@@ -11693,6 +11704,19 @@ xdg-basedir@^3.0.0:
 xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
+
+xml2js@^0.4.17:
+  version "0.4.19"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
+  integrity sha512-esZnJZJOiJR9wWKMyuvSE1y6Dq5LCuJanqhxslH2bxM6duahNZ+HMpCLhBQGZkbX6xRf8x1Y2eJlgt2q3qo49Q==
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~9.0.1"
+
+xmlbuilder@~9.0.1:
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
+  integrity sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
 
 xmlhttprequest-ssl@~1.5.4:
   version "1.5.5"
