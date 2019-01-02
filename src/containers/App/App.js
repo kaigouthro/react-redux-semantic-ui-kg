@@ -176,7 +176,7 @@ class App extends Component {
                 Have questions? Ask for help
                 {' '}
                 <a
-                  href="https://github.com/dongcai/react-redux-semantic-ui/issues"
+                  href="https://github.com/kaigouthro/react-redux-semantic-ui/issues"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
