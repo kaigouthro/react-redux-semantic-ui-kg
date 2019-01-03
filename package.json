@@ -200,7 +200,7 @@
     "react-addons-test-utils": "^15.4.2",
     "react-hot-loader": "^4.6.3",
     "react-to-html-webpack-plugin": "^2.2.0",
-    "redux-devtools": "^3.4.1",
+    "redux-devtools": "^3.5.0",
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.2.0",
     "resolve-url-loader": "^3.0.0",
