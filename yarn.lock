@@ -91,13 +91,13 @@
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@feathers-plus/batch-loader/-/batch-loader-0.3.3.tgz#ccfacc3d3fe4c67dcb9679274bb3211afd1fbe41"
 
-"@feathersjs/adapter-commons@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@feathersjs/adapter-commons/-/adapter-commons-1.0.2.tgz#6874125efae2d8ed422389b718cd362afe2ab6f5"
-  integrity sha512-nee7PEE/mEx/iofcTALvMO7gj6SC6gzKdH3xorwHMKQi9z82aI3PLvgTgC3+4B0UwCSZ1gthSUJIl8K093P4Ug==
+"@feathersjs/adapter-commons@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@feathersjs/adapter-commons/-/adapter-commons-2.0.0.tgz#59f174df0ba92087c43c79a28690d275c4064d86"
+  integrity sha512-Fyb2RpV3pZWscjeSQnuvSfksixipwsY0ObpHbz8k0bdfbjpqT59MWTzVcvYsIJzCCHfD0KcsloiZ6jhW5wL9sg==
   dependencies:
     "@feathersjs/commons" "^4.0.0"
-    "@feathersjs/errors" "^3.3.5"
+    "@feathersjs/errors" "^3.3.6"
 
 "@feathersjs/authentication-client@^1.0.9":
   version "1.0.9"
@@ -190,6 +190,13 @@
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.5.tgz#e6edef65669a0663b948ddb2d84ec48d60acd542"
   integrity sha512-Nc4SxKJ7xQk5RZ3M68/Oj5c2uB/VrUATd4dLEdSGHf9j+qvajZVmBPjqDPYfY4IeTnYNhvwTmuyCulD0bCL4ZQ==
+  dependencies:
+    debug "^4.0.0"
+
+"@feathersjs/errors@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.6.tgz#c34cfcd0a8fc1519afb36030efb3f835a8088015"
+  integrity sha512-VCohY/AQU13xYyZGl6rfdUgE+2bjaI76a4aEb6reIphHKgb4mnjYlg2PzS1/hcU1qUNi515kY9yQa5HsE7J1dQ==
   dependencies:
     debug "^4.0.0"
 
@@ -4223,12 +4230,12 @@ feathers-hooks-common@^4.10.0:
     process "0.11.10"
     traverse "^0.6.6"
 
-feathers-nedb@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/feathers-nedb/-/feathers-nedb-4.0.0.tgz#1152a7fbc2a33a1bcd68dbe0f2eed4ff6bd9acee"
-  integrity sha512-LVzpEmn21FA0kYY0DhzLjzqJAFhV+A3sDR0wyXRpllTQc2+Fq2MYLLgXVzNchD0vui9isdYdo/rmzdPjpdtFaQ==
+feathers-nedb@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/feathers-nedb/-/feathers-nedb-4.0.1.tgz#51985b2e2e4d274d626f985741081ab97b21bafc"
+  integrity sha512-2iAOTU2vSXzCXqmZnbDHGZMe++1ACPydYwwnVK/2GKd6E9amQdsjnwk1YVKoyHksDqW66HgfpT4KTIIVwz6XTg==
   dependencies:
-    "@feathersjs/adapter-commons" "^1.0.2"
+    "@feathersjs/adapter-commons" "^2.0.0"
     "@feathersjs/commons" "^4.0.0"
     "@feathersjs/errors" "^3.3.4"
 
