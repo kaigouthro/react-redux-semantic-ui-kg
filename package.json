@@ -150,7 +150,7 @@
     "socket.io-client": "^2.0.1",
     "statuses": "^1.5.0",
     "verror": "^1.10.0",
-    "yarn": "^1.12.3"
+    "yarn": "^1.13.0"
   },
   "devDependencies": {
     "autodll-webpack-plugin": "^0.4.2",
