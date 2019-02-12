@@ -158,13 +158,13 @@
     debug "^4.0.0"
     lodash.merge "^4.6.1"
 
-"@feathersjs/authentication@^2.1.14":
-  version "2.1.14"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication/-/authentication-2.1.14.tgz#f3121c09c4ee81495df29139efff013e1ac6c667"
-  integrity sha512-Hiov0MVRxo6XCCVOJ+a/05MXR8FLm7kuCr5XY4ys7g9T1atCpg/AGniKTog9x+6dLtQ2wM+EtpP1d23XOK6qIQ==
+"@feathersjs/authentication@^2.1.16":
+  version "2.1.16"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication/-/authentication-2.1.16.tgz#3661b06e9d959e329fd8448ae5a286a6c105a95d"
+  integrity sha512-TZ9rUySi8/aatHPuL1e9GUHFT/VXz14UInE9aJ1lOShTKG1OkfTaYLxjZ8i0glZkNJXkf2jwGPqXahVbGdCsFQ==
   dependencies:
     "@feathersjs/commons" "^4.0.0"
-    "@feathersjs/errors" "^3.3.5"
+    "@feathersjs/errors" "^3.3.6"
     "@feathersjs/socket-commons" "^3.1.2"
     debug "^4.0.0"
     jsonwebtoken "^8.0.0"
@@ -200,6 +200,13 @@
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.5.tgz#e6edef65669a0663b948ddb2d84ec48d60acd542"
   integrity sha512-Nc4SxKJ7xQk5RZ3M68/Oj5c2uB/VrUATd4dLEdSGHf9j+qvajZVmBPjqDPYfY4IeTnYNhvwTmuyCulD0bCL4ZQ==
+  dependencies:
+    debug "^4.0.0"
+
+"@feathersjs/errors@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.6.tgz#c34cfcd0a8fc1519afb36030efb3f835a8088015"
+  integrity sha512-VCohY/AQU13xYyZGl6rfdUgE+2bjaI76a4aEb6reIphHKgb4mnjYlg2PzS1/hcU1qUNi515kY9yQa5HsE7J1dQ==
   dependencies:
     debug "^4.0.0"
 
