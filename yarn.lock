@@ -114,12 +114,12 @@
     debug "^4.0.0"
     jwt-decode "^2.1.0"
 
-"@feathersjs/authentication-jwt@^2.0.8":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-jwt/-/authentication-jwt-2.0.8.tgz#5ac80df9cb344b303aecace302f34f4bcd6dbe92"
-  integrity sha512-2qtnNjZnf7cJrEyS3lgGgvTASg3zdBMb5LDceFxLZccA+Wo1YseIq8BZWdF6Y1R8s1u6cSAmbucP5S91yGrUaQ==
+"@feathersjs/authentication-jwt@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-jwt/-/authentication-jwt-2.0.10.tgz#f8ec25d1230552b311af21822c5974cbc5f99b5e"
+  integrity sha512-4IVBXDa4w17rroWiSM6LpSzUVG9Za1x1t7fioSObYt60PTkY7QunZt77GkdWfTNLNFvV++VVZ5tGFN6kfIKqCA==
   dependencies:
-    "@feathersjs/errors" "^3.3.5"
+    "@feathersjs/errors" "^3.3.6"
     debug "^4.0.0"
     lodash.merge "^4.6.0"
     lodash.omit "^4.5.0"
@@ -200,6 +200,13 @@
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.5.tgz#e6edef65669a0663b948ddb2d84ec48d60acd542"
   integrity sha512-Nc4SxKJ7xQk5RZ3M68/Oj5c2uB/VrUATd4dLEdSGHf9j+qvajZVmBPjqDPYfY4IeTnYNhvwTmuyCulD0bCL4ZQ==
+  dependencies:
+    debug "^4.0.0"
+
+"@feathersjs/errors@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.6.tgz#c34cfcd0a8fc1519afb36030efb3f835a8088015"
+  integrity sha512-VCohY/AQU13xYyZGl6rfdUgE+2bjaI76a4aEb6reIphHKgb4mnjYlg2PzS1/hcU1qUNi515kY9yQa5HsE7J1dQ==
   dependencies:
     debug "^4.0.0"
 
