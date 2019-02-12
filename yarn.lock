@@ -137,13 +137,13 @@
     lodash "^4.17.5"
     passport-local "^1.0.0"
 
-"@feathersjs/authentication-oauth1@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-oauth1/-/authentication-oauth1-1.0.9.tgz#5474f3f0405bc0461c1ff1515c2c2c953cac8637"
-  integrity sha512-4OERlpkmpsufRE98pjkJr/S9bIdxckv5DyOyDP6Q2FV3ON3wfMILUDvkDu2Xsb46W395TcbJ8XLYC1arCIw4tA==
+"@feathersjs/authentication-oauth1@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-oauth1/-/authentication-oauth1-1.1.1.tgz#887a550d6cc193e662d22d321b809521135ad4f6"
+  integrity sha512-tpKm3+YvBY543wBQqcCpuvhOkfQek4QKst8JFqpIO3MtGOm85/zIMhtt2CN/gL6toqsBn/w1CB3EmwyFE5Kinw==
   dependencies:
     "@feathersjs/commons" "^4.0.0"
-    "@feathersjs/errors" "^3.3.5"
+    "@feathersjs/errors" "^3.3.6"
     debug "^4.0.0"
     lodash.merge "^4.6.0"
 
@@ -200,6 +200,13 @@
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.5.tgz#e6edef65669a0663b948ddb2d84ec48d60acd542"
   integrity sha512-Nc4SxKJ7xQk5RZ3M68/Oj5c2uB/VrUATd4dLEdSGHf9j+qvajZVmBPjqDPYfY4IeTnYNhvwTmuyCulD0bCL4ZQ==
+  dependencies:
+    debug "^4.0.0"
+
+"@feathersjs/errors@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.6.tgz#c34cfcd0a8fc1519afb36030efb3f835a8088015"
+  integrity sha512-VCohY/AQU13xYyZGl6rfdUgE+2bjaI76a4aEb6reIphHKgb4mnjYlg2PzS1/hcU1qUNi515kY9yQa5HsE7J1dQ==
   dependencies:
     debug "^4.0.0"
 
