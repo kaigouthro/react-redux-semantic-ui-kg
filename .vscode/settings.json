@@ -1,3 +1,27 @@
 {
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#FFA000",
+        "breadcrumb.activeSelectionForeground": "#FFA000",
+        "editorSuggestWidget.highlightForeground": "#FFA000",
+        "editorWidget.border": "#FFA000",
+        "editorWidget.resizeBorder": "#FFA000",
+        "list.activeSelectionForeground": "#FFA000",
+        "list.highlightForeground": "#FFA000",
+        "list.inactiveSelectionForeground": "#FFA000",
+        "menu.selectionForeground": "#FFA000",
+        "menubar.selectionForeground": "#FFA000",
+        "notificationLink.foreground": "#FFA000",
+        "panelTitle.activeBorder": "#FFA000",
+        "pickerGroup.foreground": "#FFA000",
+        "progressBar.background": "#FFA000",
+        "scrollbarSlider.activeBackground": "#c37b00",
+        "settings.headerForeground": "#FFA000",
+        "settings.modifiedItemIndicator": "#FFA000",
+        "tab.activeBorder": "#FFA000",
+        "textLink.foreground": "#FFA000",
+        "activityBar.background": "#312F09",
+        "titleBar.activeBackground": "#45410C",
+        "titleBar.activeForeground": "#FCFBEC"
+    }
 }
