@@ -190,16 +190,10 @@
   resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-4.0.0.tgz#ae49bae4025c35aaeb9aacb6a0c27a3d1def5062"
   integrity sha512-hyCLse4RiNt7WLPQ0KSudjoVnwiRykhYzIZdtDon9i2usPaoYkFw/fEYZrkE5HVB+sUTwphZoZ1oOntRk1MShg==
 
-"@feathersjs/errors@^3.0.0", "@feathersjs/errors@^3.3.0", "@feathersjs/errors@^3.3.4":
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.4.tgz#7dd591626ba57d1e8074464235b4d23906833ca7"
-  dependencies:
-    debug "^4.0.0"
-
-"@feathersjs/errors@^3.3.5":
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.5.tgz#e6edef65669a0663b948ddb2d84ec48d60acd542"
-  integrity sha512-Nc4SxKJ7xQk5RZ3M68/Oj5c2uB/VrUATd4dLEdSGHf9j+qvajZVmBPjqDPYfY4IeTnYNhvwTmuyCulD0bCL4ZQ==
+"@feathersjs/errors@^3.0.0", "@feathersjs/errors@^3.3.0", "@feathersjs/errors@^3.3.4", "@feathersjs/errors@^3.3.5", "@feathersjs/errors@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-3.3.6.tgz#c34cfcd0a8fc1519afb36030efb3f835a8088015"
+  integrity sha512-VCohY/AQU13xYyZGl6rfdUgE+2bjaI76a4aEb6reIphHKgb4mnjYlg2PzS1/hcU1qUNi515kY9yQa5HsE7J1dQ==
   dependencies:
     debug "^4.0.0"
 
@@ -224,13 +218,13 @@
     events "^3.0.0"
     uberproto "^2.0.2"
 
-"@feathersjs/rest-client@^1.4.6":
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/@feathersjs/rest-client/-/rest-client-1.4.6.tgz#fadbd21e57aa9dfe98595ccc514c876c56be0cec"
-  integrity sha512-ZAag3l+VfIYvLxzkIXFK9T6xkglaoBAZYtDVsBDUifD3ubuSFymgw91vB0U9iVrp1t12agqoMvAsrAcBPijxdg==
+"@feathersjs/rest-client@^1.4.7":
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/@feathersjs/rest-client/-/rest-client-1.4.7.tgz#6fb556721b661f7aa73f27173925b17274fae164"
+  integrity sha512-Eybe9iTMz2r1J8ITRZH4/WGfIhwSIzP9kiTpwAVESo6NGE6rgwvN95FmtI5AtCABV5v4C2Cy/tVDsMMa9Dgs+A==
   dependencies:
     "@feathersjs/commons" "^4.0.0"
-    "@feathersjs/errors" "^3.3.5"
+    "@feathersjs/errors" "^3.3.6"
     qs "^6.5.0"
 
 "@feathersjs/socket-commons@^3.1.2":
