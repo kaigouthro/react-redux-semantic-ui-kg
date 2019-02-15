@@ -133,7 +133,7 @@
     "react-router-redux": "^5.0.0-alpha.9",
     "react-scrolllock": "^3.0.2",
     "react-semantic-redux-form": "^1.2.5",
-    "react-simple-animate": "^2.3.0",
+    "react-simple-animate": "^2.6.4",
     "react-sticky-box": "^0.7.7",
     "recompose": "^0.30.0",
     "redial": "^0.5.0",
