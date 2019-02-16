@@ -203,7 +203,7 @@
     "redux-devtools": "^3.4.1",
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.2.0",
-    "resolve-url-loader": "^3.0.0",
+    "resolve-url-loader": "^3.0.1",
     "sass-loader": "^7.0.3",
     "sinon": "^7.0.0",
     "style-loader": "^0.23.1",
