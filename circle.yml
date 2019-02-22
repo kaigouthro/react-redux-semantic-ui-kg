@@ -18,8 +18,7 @@ jobs:
 
     steps:
       - checkout
-      - run: npm i -g yarn
-      - run: yarn lint
-      - run: yarn install
-      - run: yarn build-dlls
-      - run: yarn build
+      - run: npm run lint
+      - run: npm run install
+      - run: npm run build-dlls
+      - run: npm run build
