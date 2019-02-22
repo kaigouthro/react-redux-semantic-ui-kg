@@ -102,7 +102,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.5",
     "feathers-authentication-hooks": "^0.3.0",
-    "feathers-hooks-common": "^4.10.0",
+    "feathers-hooks-common": "^4.20.7",
     "feathers-nedb": "^4.0.0",
     "gentle-fs": "^2.0.1",
     "graceful-fs": "^4.1.15",
