@@ -100,7 +100,7 @@
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
     "esdoc-standard-plugin": "^1.0.0",
     "express": "^4.16.4",
-    "express-session": "^1.15.5",
+    "express-session": "1.15.6",
     "feathers-authentication-hooks": "^0.3.0",
     "feathers-hooks-common": "^4.10.0",
     "feathers-nedb": "^4.0.0",
