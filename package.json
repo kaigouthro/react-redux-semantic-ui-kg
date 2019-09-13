@@ -106,7 +106,7 @@
     "feathers-nedb": "^4.0.0",
     "gentle-fs": "^2.0.1",
     "graceful-fs": "^4.1.15",
-    "history": "^4.7.2",
+    "history": "^4.10.1",
     "http-proxy": "^1.16.2",
     "is-promise": "^2.1.0",
     "js-cookie": "^2.1.3",
