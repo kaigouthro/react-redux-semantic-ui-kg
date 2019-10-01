@@ -101,7 +101,7 @@
     "esdoc-standard-plugin": "^1.0.0",
     "express": "^4.16.4",
     "express-session": "^1.15.5",
-    "feathers-authentication-hooks": "^0.3.0",
+    "feathers-authentication-hooks": "^1.0.0",
     "feathers-hooks-common": "^4.10.0",
     "feathers-nedb": "^4.0.0",
     "gentle-fs": "^2.0.1",
