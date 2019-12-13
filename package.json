@@ -116,7 +116,7 @@
     "morgan": "^1.8.1",
     "multireducer": "^3.1.2",
     "nedb": "^1.8.0",
-    "npm": "^6.5.0",
+    "npm": "^6.13.4",
     "nprogress": "^0.2.0",
     "passport-facebook-token": "^3.3.0",
     "pretty-error": "^2.1.1",
