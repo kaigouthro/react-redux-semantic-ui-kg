@@ -113,7 +113,7 @@
     "jshint": "^2.9.6",
     "localforage": "^1.5.5",
     "lru-memoize": "^1.0.1",
-    "morgan": "^1.8.1",
+    "morgan": "^1.10.0",
     "multireducer": "^3.1.2",
     "nedb": "^1.8.0",
     "npm": "^6.5.0",
