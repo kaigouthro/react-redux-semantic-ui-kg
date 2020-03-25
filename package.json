@@ -104,7 +104,7 @@
     "feathers-authentication-hooks": "^0.3.0",
     "feathers-hooks-common": "^4.10.0",
     "feathers-nedb": "^4.0.0",
-    "gentle-fs": "^2.0.1",
+    "gentle-fs": "^2.3.1",
     "graceful-fs": "^4.1.15",
     "history": "^4.7.2",
     "http-proxy": "^1.16.2",
